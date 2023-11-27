@@ -288,7 +288,7 @@ const blogSection = {
   title: "Blogs",
   subtitle:
     "Com amor pelo desenvolvimento de coisas legais, adoro escrever e ensinar aos outros o que aprendi.",
-  displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
+  displayMediumBlogs: "false", // Set true to display fetched medium blogs instead of hardcoded ones
   blogs: [
     {
       url: "https://cyber-gorilla.blogspot.com/2023/04/instalacao-do-servidor-ubuntu-2004-step.html",
@@ -333,7 +333,7 @@ const podcastSection = {
 
   // Please Provide with Your Podcast embeded Link
   podcast: [
-    "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
+    ""
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -341,9 +341,9 @@ const podcastSection = {
 const contactInfo = {
   title: emoji("Entre em Contacto ☎️"),
   subtitle:
-    "Quer discutir um projeto ou apenas cumprimentar? Meu WhatsApp está aberto para todos.",
-  number: "+258 847669125",
-  email_address: "stelviochibuco799@gmail.com"
+    "Quer discutir um projeto ou apenas cumprimentar?  estou aberto para todos.",
+  number: "",
+  email_address: ""
 };
 
 // Twitter Section
