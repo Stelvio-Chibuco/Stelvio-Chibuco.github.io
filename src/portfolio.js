@@ -292,7 +292,7 @@ const blogSection = {
   blogs: [
     {
       url: "https://cyber-gorilla.blogspot.com/2023/04/instalacao-do-servidor-ubuntu-2004-step.html",
-      title: "Instalação do Servidor Ubuntu 20.04 e Instalação da interface gráfica no servidor Ubuntu",
+      title: "Instalação do Servidor Ubuntu 20.04 e Instalação da interface gráfica/GUI",
       description:
         "Você deseja aprender a instalar e configurar o Ubuntu server em menos de 30 minutos?"
     },
@@ -300,7 +300,7 @@ const blogSection = {
       url: "https://cyber-gorilla.blogspot.com/2023/10/linkedin-sign-up-e-personalizacao.html",
       title: "LinkedIn Sign up e Personalizacao",
       description:
-        "Vamos explorar os princípios essenciais, teorias relevantes e conceitos-chave que você precisará compreender para ter sucesso neste mini curso."
+        "Vamos explorar os princípios essenciais, teorias relevantes e conceitos-chave que você precisará compreender para ter sucesso neste mini-curso."
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -316,7 +316,7 @@ const talkSection = {
 
   talks: [
     {
-      title: "OpenGL no Ubuntu 20.04 LTS",
+      title: "OpenGL no Ubuntu",
       subtitle: "Breve demonstração Teorica e pratica para desenvolvimento OpenGL no sistema Linux (Ubuntu 20.04 LTS).",
       slides_url: "https://cyber-gorilla.blogspot.com/2023/11/slides-opengl.html",
       event_url: "https://www.youtube.com/playlist?list=PL7uu5HDOU0qI4kWWEV1g-vqrGNePa-bmG"
