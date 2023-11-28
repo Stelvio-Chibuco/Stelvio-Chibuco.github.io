@@ -21,7 +21,7 @@ const illustration = {
 
 const greeting = {
   username: "Stélvio Chibuco",
-  title: "Olá, seja bem-vindo(a) ao meu WebFólio",
+  title: "Olá, seja bem-vindo(a) ao meu DeveloperFólio",
   subTitle: emoji(
     "Um apaixonado desenvolvedor full stack 🚀 com experiência na construção de aplicações web e mobile com JavaScript / Reactjs / Nodejs / React Native e outras bibliotecas e frameworks interessantes."
   ),
@@ -49,7 +49,7 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "Quem sou eu?",
-  subTitle: "DESENVOLVEDOR FULL STACK COLOSSAL QUE QUER EXPLORAR TODA TECNOLOGIA",
+  subTitle: "UM DESENVOLVEDOR FULL STACK COLOSSAL QUE QUER EXPLORAR TODA TECNOLOGIA:",
   skills: [
     emoji(
       "⚡ Desenvolver interfaces de usuário altamente interativas para suas aplicações web e mobile"
@@ -139,7 +139,7 @@ const educationInfo = {
       logo: require("./assets/images/UniSave_logo.png"),
       subHeader: "Licenciatura em Informática",
       duration: "Março de 2020 - Dezembro de 2023",
-      desc: "Classificado entre os 10% melhores do programa. Cursou disciplinas sobre Engenharia de Software, Segurança na Web, Sistemas Operacionais, IA, ...",
+      desc: "Classificado entre os 10% melhores do curso. Tendo frequentado disciplinas sobre Engenharia de Software, Segurança na Web, Sistemas Operacionais, IA, ...",
 
     }
   ]
