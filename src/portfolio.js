@@ -320,7 +320,7 @@ const talkSection = {
       subtitle: "Breve demonstração Teorica e pratica para desenvolvimento OpenGL no sistema Linux (Ubuntu 20.04 LTS).",
       slides_url: "https://cyber-gorilla.blogspot.com/2023/11/slides-opengl.html",
       event_url: "https://www.youtube.com/playlist?list=PL7uu5HDOU0qI4kWWEV1g-vqrGNePa-bmG"
-    }
+    },
     {
       title: "Sarifa Vanimaly Chibuco",
       subtitle: "Depoimento",
