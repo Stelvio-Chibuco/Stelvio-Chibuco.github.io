@@ -329,11 +329,11 @@ const talkSection = {
 
 const podcastSection = {
   title: emoji("Depoimentos e Recomendações🎙️"),
-  subtitle: "ADORO FALAR SOBRE MIM E TECNOLOGIA",
+  subtitle: "Credibilidade e impacto positivo",
 
   // Please Provide with Your Podcast embeded Link
   podcast: [
-    ""
+    "https://nhamahangotec.blogspot.com/"
   ],
   display: true // Set false to hide this section, defaults to true
 };
