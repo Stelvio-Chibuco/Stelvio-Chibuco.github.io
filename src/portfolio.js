@@ -285,11 +285,17 @@ const achievementSection = {
 // Blogs Section
 
 const blogSection = {
-  title: "Blogs",
+  title: "Blog",
   subtitle:
     "Com amor pelo desenvolvimento de coisas legais, adoro escrever e ensinar aos outros o que aprendi.",
   displayMediumBlogs: "false", // Set true to display fetched medium blogs instead of hardcoded ones
   blogs: [
+    {
+      url: "https://nhamahangotec.blogspot.com/",
+      title: "DEPIOMENTO E RECOMENDAÇÃO",
+      description:
+        "Credibilidade e impacto positivo"
+    },
     {
       url: "https://cyber-gorilla.blogspot.com/2023/04/instalacao-do-servidor-ubuntu-2004-step.html",
       title: "Instalação do Servidor Ubuntu 20.04 e Instalação da interface gráfica/GUI",
@@ -328,12 +334,12 @@ const talkSection = {
 // Podcast Section
 
 const podcastSection = {
-  title: emoji("Depoimentos e Recomendações🎙️"),
-  subtitle: "Credibilidade e impacto positivo",
+  title: emoji("Podcast🎙️"),
+  subtitle: "Adoro falar sobre mim e tecnologia",
 
   // Please Provide with Your Podcast embeded Link
   podcast: [
-    "https://nhamahangotec.blogspot.com/"
+    ""
   ],
   display: true // Set false to hide this section, defaults to true
 };
