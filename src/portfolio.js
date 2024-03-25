@@ -347,7 +347,7 @@ const podcastSection = {
 const contactInfo = {
   title: emoji("Entre em Contacto ☎️"),
   subtitle:
-    "Quer discutir um projeto ou apenas cumprimentar?  estou aberto para todos.",
+    "Quer discutir um projecto ou apenas cumprimentar?  estou aberto para todos.",
   number: "",
   email_address: ""
 };
