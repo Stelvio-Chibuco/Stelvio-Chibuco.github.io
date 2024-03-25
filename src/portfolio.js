@@ -349,7 +349,7 @@ const contactInfo = {
   subtitle:
     "Quer discutir um projecto ou apenas cumprimentar?  estou aberto para todos.",
   number: "",
-  email_address: ""
+  email_address: "stelviochibuco@outlook.com"
 };
 
 // Twitter Section
