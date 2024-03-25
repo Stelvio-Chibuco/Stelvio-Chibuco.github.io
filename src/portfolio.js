@@ -38,6 +38,7 @@ const socialMediaLinks = {
   gmail: "stelviochibuco@outlook.com",
   gitlab: "https://gitlab.com/Stelvio-Chibuco",
   facebook: "https://web.facebook.com/stelvio.chibuco/",
+  Twitter:"https://twitter.com/StelvioChibuco",
   medium: "https://medium.com/@stelviochibuco799",
   stackoverflow: "https://stackoverflow.com/users/22986839/st%c3%a9lvio-chibuco",
   // Instagram, Twitter and Kaggle are also supported in the links!
