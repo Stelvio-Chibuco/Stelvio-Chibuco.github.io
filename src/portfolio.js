@@ -307,6 +307,12 @@ const blogSection = {
       title: "LinkedIn Sign up e Personalizacao",
       description:
         "Vamos explorar os princípios essenciais, teorias relevantes e conceitos-chave que você precisará compreender para ter sucesso neste mini-curso."
+    },
+    {
+      url: "https://cyber-gorilla.blogspot.com/2024/03/ciberseguranca-em-mocambique.html",
+      title: "Cibersegurança em Moçambique",
+      description:
+        "A cibersegurança é uma preocupação crescente em todo o mundo, e Moçambique não é exceção. Vamos explorar os principais tipos de ataques cibernéticos que afetam o país e fornecer dicas práticas de como se proteger."
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -317,7 +323,7 @@ const blogSection = {
 const talkSection = {
   title: "PALESTRAS",
   subtitle: emoji(
-    "AMO COMPARTILHAR MEU CONHECIMENTO LIMITADO E RECEBER UM CRACHÁ DE PALESTRANTE 😅"
+    "AdoroO COMPARTILHAR MEU CONHECIMENTO LIMITADO E RECEBER UM CRACHÁ DE PALESTRANTE 😅"
   ),
 
   talks: [
