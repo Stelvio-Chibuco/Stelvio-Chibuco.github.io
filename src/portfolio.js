@@ -129,7 +129,7 @@ const educationInfo = {
     {
       schoolName: "Universidade Save",
       logo: require("./assets/images/UniSave_logo.png"),
-      subHeader: "Especialização em Engenharia de sistemas",
+      subHeader: "Especialização em Engenharia de Sistemas",
       duration: "Janeiro de 2022 - Dezembro de 2023",
       desc: "Participou das Jornadas Cientificas II na UJC.",
       descBullets: [
@@ -138,8 +138,8 @@ const educationInfo = {
     {
       schoolName: "Universidade Save",
       logo: require("./assets/images/UniSave_logo.png"),
-      subHeader: "Licenciatura em Informática",
-      duration: "Março de 2020 - Dezembro de 2023",
+      subHeader: "Licenciatura em Informática Com Especialização em Engenharia de Sistemas",
+      duration: "Março de 2020 - Outubro de 2024",
       desc: "Classificado entre os 10% melhores do curso. Tendo frequentado disciplinas sobre Engenharia de Software, Segurança na Web, Sistemas Operacionais, IA, ...",
 
     }
@@ -176,7 +176,7 @@ const workExperiences = {
       role: "Licenciatura em Informática",
       company: "UniSave",
       companylogo: require("./assets/images/UniSave_logo.png"),
-      date: "Março de 2020 – Presente",
+      date: "Março de 2020 – Outubro de 2024",
     },
     {
       role: "Estágio Técnico Profissional",
@@ -189,6 +189,12 @@ const workExperiences = {
       company: "UniSave",
       companylogo: require("./assets/images/UniSave_logo.png"),
       date: "Julho 2023 – Novembro 2023",
+    },
+    {
+      role: "Estágio Técnico Profissional",
+      company: "CMC De Xai-Xai",
+      companylogo: require("./assets/images/UniSave_logo.png"),
+      date: "Julho 2024 – Janeiro 2025",
     }
   ]
 };
