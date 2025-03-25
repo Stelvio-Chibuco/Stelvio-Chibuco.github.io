@@ -129,7 +129,7 @@ const educationInfo = {
     {
       schoolName: "Universidade Save",
       logo: require("./assets/images/UniSave_logo.png"),
-      subHeader: "Especialização em Engenharia de Sistemas",
+      subHeader: "Especialização em Engenharia de Desenvolvimento de Sistemas",
       duration: "Janeiro de 2022 - Dezembro de 2023",
       desc: "Participou das Jornadas Cientificas II na UJC.",
       descBullets: [
@@ -138,7 +138,7 @@ const educationInfo = {
     {
       schoolName: "Universidade Save",
       logo: require("./assets/images/UniSave_logo.png"),
-      subHeader: "Licenciatura em Informática Com Especialização em Engenharia de Sistemas",
+      subHeader: "Licenciatura em Informática Com Especialização em Engenharia de Desenvolvimento de Sistemas",
       duration: "Março de 2020 - Outubro de 2024",
       desc: "Classificado entre os 10% melhores do curso. Tendo frequentado disciplinas sobre Engenharia de Software, Segurança na Web, Sistemas Operacionais, IA, ...",
 
@@ -157,11 +157,11 @@ const techStack = {
     },
     {
       Stack: "Back-end",
-      progressPercentage: "60%"
+      progressPercentage: "70%"
     },
     {
       Stack: "Programação",
-      progressPercentage: "80%"
+      progressPercentage: "90%"
     }
   ],
   displayCodersrank: true // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
