@@ -21,9 +21,9 @@ const illustration = {
 
 const greeting = {
   username: "Stélvio Chibuco",
-  title: "Olá, seja bem-vindo(a) ao meu DeveloperFólio",
+  title: "Saudações, seja bem-vindo(a) ao meu DeveloperFólio",
   subTitle: emoji(
-    "Um apaixonado desenvolvedor full stack 🚀 com experiência na construção de aplicações web e mobile com JavaScript / Reactjs / Nodejs / React Native e outras bibliotecas e frameworks interessantes."
+    "Um apaixonado desenvolvedor full stack 🚀 com experiência na construção de aplicações web e mobile com JavaScript, Reactjs, Nodejs, React Native, Python, PHP e outras linguagens, bibliotecas e frameworks interessantes."
   ),
   resumeLink:
     "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
@@ -55,11 +55,11 @@ const skillsSection = {
     "UM DESENVOLVEDOR FULL STACK COLOSSAL QUE QUER EXPLORAR TODA TECNOLOGIA:",
   skills: [
     emoji(
-      "⚡ Desenvolver interfaces de usuário altamente interativas para suas aplicações web e mobile"
+      "⚡ Desenvolver interfaces altamente interativas para suas aplicações web e mobile"
     ),
     emoji("⚡ Aplicações Web Progressivas (PWA) em pilhas normais e SPA"),
     emoji(
-      "⚡ Integração de serviços de terceiros como Firebase/ AWS / Digital Ocean"
+      "⚡ Integração de serviços de terceiros como Firebase, AWS, Digital Ocean..."
     )
   ],
 
@@ -132,7 +132,7 @@ const educationInfo = {
       schoolName: "Universidade Save",
       logo: require("./assets/images/UniSave_logo.png"),
       subHeader: "Especialização em Engenharia de Desenvolvimento de Sistemas",
-      duration: "Janeiro de 2022 - Dezembro de 2023",
+      duration: "Fevereiro de 2022 - Dezembro de 2023",
       desc: "Participou das Jornadas Cientificas II na UJC.",
       descBullets: [
         "Sistema de controle de acesso baseado no reconhecimento facial e emissão de alertas de segurança."
@@ -144,7 +144,7 @@ const educationInfo = {
       subHeader:
         "Licenciatura em Informática Com Especialização em Engenharia de Desenvolvimento de Sistemas",
       duration: "Março de 2020 - Outubro de 2024",
-      desc: "Classificado entre os 10% melhores do curso. Tendo frequentado disciplinas sobre Engenharia de Software, Segurança na Web, Sistemas Operacionais, IA, ..."
+      desc: "Classificado entre os 20% melhores do curso. Tendo frequentado disciplinas sobre Engenharia de Software, Segurança na Web, Sistemas Operacionais, IA, ..."
     }
   ]
 };
@@ -160,11 +160,11 @@ const techStack = {
     },
     {
       Stack: "Back-end",
-      progressPercentage: "70%"
+      progressPercentage: "85%"
     },
     {
       Stack: "Programação",
-      progressPercentage: "90%"
+      progressPercentage: "95%"
     }
   ],
   displayCodersrank: true // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
@@ -182,22 +182,22 @@ const workExperiences = {
       date: "Março de 2020 – Outubro de 2024"
     },
     {
-      role: "Estágio Técnico Profissional",
+      role: "Estágio Técnico Profissional de Informática",
       company: "UniSave",
       companylogo: require("./assets/images/UniSave_logo.png"),
-      date: "Janeiro 2023 – Maio 2023"
+      date: "Fevereiro 2023 – Junho 2023"
     },
     {
-      role: "Estágio em Engenharia de Software",
+      role: "Estágio em Engenharia de Desenvolvimento de Software",
       company: "UniSave",
       companylogo: require("./assets/images/UniSave_logo.png"),
       date: "Julho 2023 – Novembro 2023"
     },
     {
-      role: "Estágio Técnico Profissional",
+      role: "Técnico Profissional De Inofrmática",
       company: "CMC De Xai-Xai",
       companylogo: require("./assets/images/UniSave_logo.png"),
-      date: "Julho 2024 – Janeiro 2025"
+      date: "Julho 2024 – 2025"
     }
   ]
 };
@@ -219,7 +219,7 @@ const bigProjects = {
     {
       image: require("./assets/images/stock.jpeg"),
       projectName: "Stock&venda",
-      projectDesc: "Otimize suas operações comerciais hoje mesmo!",
+      projectDesc: "Optimização de operações comerciais!",
       footerLink: [
         {
           name: "Visite",
@@ -261,7 +261,7 @@ const achievementSection = {
       footerLink: [
         {
           name: "certificação",
-          url: ""
+          url: "https://drive.google.com/file/d/1GLhs1dlExjpwx7sf-0JgzCrpX2xry5FT/view?usp=sharing"
         }
       ]
     },
@@ -273,7 +273,7 @@ const achievementSection = {
       footerLink: [
         {
           name: "certificação",
-          url: ""
+          url: "https://drive.google.com/file/d/1GLhs1dlExjpwx7sf-0JgzCrpX2xry5FT/view?usp=sharing"
         }
       ]
     },
@@ -330,7 +330,7 @@ const blogSection = {
 const talkSection = {
   title: "PALESTRAS",
   subtitle: emoji(
-    "AdoroO COMPARTILHAR MEU CONHECIMENTO LIMITADO E RECEBER UM CRACHÁ DE PALESTRANTE 😅"
+    "ADORO COMPARTILHAR MEU CONHECIMENTO LIMITADO E RECEBER UM CRACHÁ DE PALESTRANTE 😅"
   ),
 
   talks: [
