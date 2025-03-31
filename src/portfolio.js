@@ -38,9 +38,10 @@ const socialMediaLinks = {
   gmail: "stelviochibuco@outlook.com",
   gitlab: "https://gitlab.com/Stelvio-Chibuco",
   facebook: "https://web.facebook.com/stelvio.chibuco/",
-  Twitter:"https://twitter.com/StelvioChibuco",
+  twitter: "https://twitter.com/StelvioChibuco",
   medium: "https://medium.com/@stelviochibuco799",
-  stackoverflow: "https://stackoverflow.com/users/22986839/st%c3%a9lvio-chibuco",
+  stackoverflow:
+    "https://stackoverflow.com/users/22986839/st%c3%a9lvio-chibuco",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -50,7 +51,8 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "Quem sou eu?",
-  subTitle: "UM DESENVOLVEDOR FULL STACK COLOSSAL QUE QUER EXPLORAR TODA TECNOLOGIA:",
+  subTitle:
+    "UM DESENVOLVEDOR FULL STACK COLOSSAL QUE QUER EXPLORAR TODA TECNOLOGIA:",
   skills: [
     emoji(
       "⚡ Desenvolver interfaces de usuário altamente interativas para suas aplicações web e mobile"
@@ -133,15 +135,16 @@ const educationInfo = {
       duration: "Janeiro de 2022 - Dezembro de 2023",
       desc: "Participou das Jornadas Cientificas II na UJC.",
       descBullets: [
-        "Sistema de controle de acesso baseado no reconhecimento facial e emissão de alertas de segurança."]
+        "Sistema de controle de acesso baseado no reconhecimento facial e emissão de alertas de segurança."
+      ]
     },
     {
       schoolName: "Universidade Save",
       logo: require("./assets/images/UniSave_logo.png"),
-      subHeader: "Licenciatura em Informática Com Especialização em Engenharia de Desenvolvimento de Sistemas",
+      subHeader:
+        "Licenciatura em Informática Com Especialização em Engenharia de Desenvolvimento de Sistemas",
       duration: "Março de 2020 - Outubro de 2024",
-      desc: "Classificado entre os 10% melhores do curso. Tendo frequentado disciplinas sobre Engenharia de Software, Segurança na Web, Sistemas Operacionais, IA, ...",
-
+      desc: "Classificado entre os 10% melhores do curso. Tendo frequentado disciplinas sobre Engenharia de Software, Segurança na Web, Sistemas Operacionais, IA, ..."
     }
   ]
 };
@@ -176,25 +179,25 @@ const workExperiences = {
       role: "Licenciatura em Informática",
       company: "UniSave",
       companylogo: require("./assets/images/UniSave_logo.png"),
-      date: "Março de 2020 – Outubro de 2024",
+      date: "Março de 2020 – Outubro de 2024"
     },
     {
       role: "Estágio Técnico Profissional",
       company: "UniSave",
       companylogo: require("./assets/images/UniSave_logo.png"),
-      date: "Janeiro 2023 – Maio 2023",
+      date: "Janeiro 2023 – Maio 2023"
     },
     {
       role: "Estágio em Engenharia de Software",
       company: "UniSave",
       companylogo: require("./assets/images/UniSave_logo.png"),
-      date: "Julho 2023 – Novembro 2023",
+      date: "Julho 2023 – Novembro 2023"
     },
     {
       role: "Estágio Técnico Profissional",
       company: "CMC De Xai-Xai",
       companylogo: require("./assets/images/UniSave_logo.png"),
-      date: "Julho 2024 – Janeiro 2025",
+      date: "Julho 2024 – Janeiro 2025"
     }
   ]
 };
@@ -228,7 +231,8 @@ const bigProjects = {
     {
       image: require("./assets/images/recfacial.png"),
       projectName: "Reconhecimento Facial",
-      projectDesc: "Escolha inteligente para um controle de acesso moderno e eficiente.",
+      projectDesc:
+        "Escolha inteligente para um controle de acesso moderno e eficiente.",
       footerLink: [
         {
           name: "Visite",
@@ -251,21 +255,19 @@ const achievementSection = {
   achievementsCards: [
     {
       title: "Introdução a Cibersegurança",
-      subtitle:
-        "",
+      subtitle: "",
       image: require("./assets/images/network basics.png"),
       imageAlt: "Google Code-In Logo",
       footerLink: [
         {
           name: "certificação",
           url: ""
-        },
+        }
       ]
     },
     {
       title: "Noções básicas de rede",
-      subtitle:
-        "",
+      subtitle: "",
       image: require("./assets/images/cybersecurity.png"),
       imageAlt: "Google Assistant Action Logo",
       footerLink: [
@@ -281,9 +283,7 @@ const achievementSection = {
       subtitle: "",
       image: require("./assets/images/pwaLogo.webp"),
       imageAlt: "PWA Logo",
-      footerLink: [
-        {name: "certificação", url: ""},
-      ]
+      footerLink: [{name: "certificação", url: ""}]
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -300,12 +300,12 @@ const blogSection = {
     {
       url: "https://nhamahangotec.blogspot.com/",
       title: "DEPIOMENTO E RECOMENDAÇÃO",
-      description:
-        "Credibilidade e impacto positivo"
+      description: "Credibilidade e impacto positivo"
     },
     {
       url: "https://cyber-gorilla.blogspot.com/2023/04/instalacao-do-servidor-ubuntu-2004-step.html",
-      title: "Instalação do Servidor Ubuntu 20.04 e Instalação da interface gráfica/GUI",
+      title:
+        "Instalação do Servidor Ubuntu 20.04 e Instalação da interface gráfica/GUI",
       description:
         "Você deseja aprender a instalar e configurar o Ubuntu server em menos de 30 minutos?"
     },
@@ -336,9 +336,12 @@ const talkSection = {
   talks: [
     {
       title: "OpenGL no Ubuntu",
-      subtitle: "Breve demonstração Teorica e pratica para desenvolvimento OpenGL no sistema Linux (Ubuntu 20.04 LTS).",
-      slides_url: "https://cyber-gorilla.blogspot.com/2023/11/slides-opengl.html",
-      event_url: "https://www.youtube.com/playlist?list=PL7uu5HDOU0qI4kWWEV1g-vqrGNePa-bmG"
+      subtitle:
+        "Breve demonstração Teorica e pratica para desenvolvimento OpenGL no sistema Linux (Ubuntu 20.04 LTS).",
+      slides_url:
+        "https://cyber-gorilla.blogspot.com/2023/11/slides-opengl.html",
+      event_url:
+        "https://www.youtube.com/playlist?list=PL7uu5HDOU0qI4kWWEV1g-vqrGNePa-bmG"
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -351,9 +354,7 @@ const podcastSection = {
   subtitle: "Adoro falar sobre mim e tecnologia",
 
   // Please Provide with Your Podcast embeded Link
-  podcast: [
-    ""
-  ],
+  podcast: [""],
   display: true // Set false to hide this section, defaults to true
 };
 
