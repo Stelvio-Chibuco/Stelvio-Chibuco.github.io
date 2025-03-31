@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Stelvio-Chibuco.github.io/static/css/main.7afc47d3.css",
-    "main.js": "/Stelvio-Chibuco.github.io/static/js/main.977c91d2.js",
+    "main.js": "/Stelvio-Chibuco.github.io/static/js/main.38f55fd8.js",
     "static/css/64.bba8fa55.chunk.css": "/Stelvio-Chibuco.github.io/static/css/64.bba8fa55.chunk.css",
     "static/js/64.56dc6704.chunk.js": "/Stelvio-Chibuco.github.io/static/js/64.56dc6704.chunk.js",
     "static/css/769.b3cbb36b.chunk.css": "/Stelvio-Chibuco.github.io/static/css/769.b3cbb36b.chunk.css",
@@ -21,7 +21,7 @@
     "index.html": "/Stelvio-Chibuco.github.io/index.html",
     "static/media/talksCardBack.svg": "/Stelvio-Chibuco.github.io/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
     "main.7afc47d3.css.map": "/Stelvio-Chibuco.github.io/static/css/main.7afc47d3.css.map",
-    "main.977c91d2.js.map": "/Stelvio-Chibuco.github.io/static/js/main.977c91d2.js.map",
+    "main.38f55fd8.js.map": "/Stelvio-Chibuco.github.io/static/js/main.38f55fd8.js.map",
     "64.bba8fa55.chunk.css.map": "/Stelvio-Chibuco.github.io/static/css/64.bba8fa55.chunk.css.map",
     "64.56dc6704.chunk.js.map": "/Stelvio-Chibuco.github.io/static/js/64.56dc6704.chunk.js.map",
     "769.b3cbb36b.chunk.css.map": "/Stelvio-Chibuco.github.io/static/css/769.b3cbb36b.chunk.css.map",
@@ -29,6 +29,6 @@
   },
   "entrypoints": [
     "static/css/main.7afc47d3.css",
-    "static/js/main.977c91d2.js"
+    "static/js/main.38f55fd8.js"
   ]
 }
