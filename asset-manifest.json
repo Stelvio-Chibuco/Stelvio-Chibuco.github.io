@@ -1,17 +1,22 @@
 {
   "files": {
     "main.css": "/static/css/main.93690824.css",
-    "main.js": "/static/js/main.d49a7b1f.js",
+    "main.js": "/static/js/main.c22cfd7f.js",
     "static/css/487.bb36206c.chunk.css": "/static/css/487.bb36206c.chunk.css",
     "static/js/487.50a4e382.chunk.js": "/static/js/487.50a4e382.chunk.js",
     "static/css/990.c6a7ee28.chunk.css": "/static/css/990.c6a7ee28.chunk.css",
     "static/js/990.3cd1238e.chunk.js": "/static/js/990.3cd1238e.chunk.js",
+    "static/media/networking-essentials.png": "/static/media/networking-essentials.5b7f5b2f83a119bce88a.png",
     "static/media/recfacial.png": "/static/media/recfacial.17d7f61692fcbc87c438.png",
     "static/media/UniSave_logo.png": "/static/media/UniSave_logo.b4bc2aa551e3ffc94a88.png",
     "static/media/Montserrat-Regular.ttf": "/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
     "static/media/cmcxxLogo.png": "/static/media/cmcxxLogo.e81884e5ffab2ef6b123.png",
     "static/media/inageLogo.png": "/static/media/inageLogo.3a3121fe93f2e638bc57.png",
+    "static/media/cyber-threat-management.png": "/static/media/cyber-threat-management.32710fde62cca44b299d.png",
     "static/media/Agustina.woff": "/static/media/Agustina.eb0c59dda4cc308cba96.woff",
+    "static/media/python-essentials-1.1.png": "/static/media/python-essentials-1.1.4d58d2f3d79acc50ac4d.png",
+    "static/media/ethical-hacker.png": "/static/media/ethical-hacker.1dfc30d641540177aec1.png",
+    "static/media/english-for-it-2.png": "/static/media/english-for-it-2.d03f00c1db9286ba2284.png",
     "static/media/stock.png": "/static/media/stock.e80b4ffe8a91d6465195.png",
     "static/media/introduction-to-cybersecurity.png": "/static/media/introduction-to-cybersecurity.236599278c8abf2bcfb0.png",
     "static/media/manOnTable.svg": "/static/media/manOnTable.8f117eb207e57ed8f89d67d595aceb45.svg",
@@ -23,7 +28,7 @@
     "index.html": "/index.html",
     "static/media/talksCardBack.svg": "/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
     "main.93690824.css.map": "/static/css/main.93690824.css.map",
-    "main.d49a7b1f.js.map": "/static/js/main.d49a7b1f.js.map",
+    "main.c22cfd7f.js.map": "/static/js/main.c22cfd7f.js.map",
     "487.bb36206c.chunk.css.map": "/static/css/487.bb36206c.chunk.css.map",
     "487.50a4e382.chunk.js.map": "/static/js/487.50a4e382.chunk.js.map",
     "990.c6a7ee28.chunk.css.map": "/static/css/990.c6a7ee28.chunk.css.map",
@@ -31,6 +36,6 @@
   },
   "entrypoints": [
     "static/css/main.93690824.css",
-    "static/js/main.d49a7b1f.js"
+    "static/js/main.c22cfd7f.js"
   ]
 }
