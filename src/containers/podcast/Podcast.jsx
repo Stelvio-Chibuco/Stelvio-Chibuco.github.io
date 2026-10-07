@@ -1,7 +1,7 @@
 import React, {useContext} from "react";
 import "./Podcast.scss";
 import {podcastSection} from "../../portfolio";
-import {Fade} from "react-reveal";
+import {Fade} from "../../components/fade/Fade";
 import StyleContext from "../../contexts/StyleContext";
 
 export default function Podcast() {
@@ -14,7 +14,7 @@ export default function Podcast() {
     return null;
   }
   return (
-    <Fade fraction={0} bottom duration={1000} distance="20px">
+    <Fade bottom duration={1000} distance="20px">
       <div className="main">
         <div className="podcast-header">
           <h1 className="podcast-header-title">{podcastSection.title}</h1>

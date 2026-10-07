@@ -72,7 +72,10 @@ if (USE_GITHUB_DATA === "true") {
 
     console.log(`statusCode: ${res.statusCode}`);
     if (res.statusCode !== 200) {
-      throw new Error(ERR.requestFailed);
+      // Não interrompe o build: o site usa o public/profile.json já guardado
+      console.warn(`${ERR.requestFailed} A usar os dados guardados.`);
+      res.resume();
+      return;
     }
 
     res.on("data", d => {
@@ -87,7 +90,9 @@ if (USE_GITHUB_DATA === "true") {
   });
 
   req.on("error", error => {
-    throw error;
+    console.warn(
+      `Pedido falhou (${error.message}). A usar os dados guardados.`
+    );
   });
 
   req.write(data);
@@ -108,7 +113,9 @@ if (MEDIUM_USERNAME !== undefined) {
 
     console.log(`statusCode: ${res.statusCode}`);
     if (res.statusCode !== 200) {
-      throw new Error(ERR.requestMediumFailed);
+      console.warn(ERR.requestFailedMedium);
+      res.resume();
+      return;
     }
 
     res.on("data", d => {
@@ -123,7 +130,9 @@ if (MEDIUM_USERNAME !== undefined) {
   });
 
   req.on("error", error => {
-    throw error;
+    console.warn(
+      `Pedido falhou (${error.message}). A usar os dados guardados.`
+    );
   });
 
   req.end();

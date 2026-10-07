@@ -1,14 +1,14 @@
 import React from "react";
 import "./Progress.scss";
 import {illustration, techStack} from "../../portfolio";
-import {Fade} from "react-reveal";
+import {Fade} from "../../components/fade/Fade";
 import Build from "../../assets/lottie/build";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 
 export default function StackProgress() {
   if (techStack.viewSkillBars) {
     return (
-      <Fade fraction={0} bottom duration={1000} distance="20px">
+      <Fade bottom duration={1000} distance="20px">
         <div className="skills-container">
           <div className="skills-bar">
             <h1 className="skills-heading">Competência</h1>
@@ -33,7 +33,9 @@ export default function StackProgress() {
             ) : (
               <img
                 alt="Competências"
-                src={require("../../assets/images/skill.svg")}
+                src={
+                  new URL("../../assets/images/skill.svg", import.meta.url).href
+                }
               />
             )}
           </div>

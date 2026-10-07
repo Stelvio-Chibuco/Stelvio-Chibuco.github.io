@@ -1,14 +1,43 @@
 import React, {useState, createRef} from "react";
 import "./ExperienceCard.scss";
-import ColorThief from "colorthief";
+
+// Cor dominante aproximada do logótipo: média dos píxeis opacos e não brancos
+function getDominantColor(img) {
+  const size = 32;
+  const canvas = document.createElement("canvas");
+  canvas.width = size;
+  canvas.height = size;
+  const context = canvas.getContext("2d");
+  context.drawImage(img, 0, 0, size, size);
+  const {data} = context.getImageData(0, 0, size, size);
+  let r = 0;
+  let g = 0;
+  let b = 0;
+  let count = 0;
+  for (let i = 0; i < data.length; i += 4) {
+    const isOpaque = data[i + 3] > 125;
+    const isWhite = data[i] > 245 && data[i + 1] > 245 && data[i + 2] > 245;
+    if (isOpaque && !isWhite) {
+      r += data[i];
+      g += data[i + 1];
+      b += data[i + 2];
+      count++;
+    }
+  }
+  if (count === 0) return undefined;
+  return [r, g, b].map(value => Math.round(value / count));
+}
 
 export default function ExperienceCard({cardInfo, isDark}) {
   const [colorArrays, setColorArrays] = useState([]);
   const imgRef = createRef();
 
   function getColorArrays() {
-    const colorThief = new ColorThief();
-    setColorArrays(colorThief.getColor(imgRef.current));
+    try {
+      setColorArrays(getDominantColor(imgRef.current));
+    } catch (error) {
+      setColorArrays(undefined);
+    }
   }
 
   function rgb(values) {

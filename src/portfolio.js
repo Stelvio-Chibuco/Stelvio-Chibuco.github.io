@@ -120,7 +120,7 @@ const educationInfo = {
   schools: [
     {
       schoolName: "Universidade Save",
-      logo: require("./assets/images/UniSave_logo.png"),
+      logo: new URL("./assets/images/UniSave_logo.png", import.meta.url).href,
       subHeader:
         "Licenciatura em Informática (Engenharia de Desenvolvimento de Sistemas)",
       duration: "Março de 2020 - Outubro de 2024",
@@ -169,25 +169,29 @@ const workExperiences = {
     {
       role: "Estágio Técnico-Profissional",
       company: "Instituto Nacional de Governo Electrónico (INAGE) – Gaza",
-      companylogo: require("./assets/images/inageLogo.png"),
+      companylogo: new URL("./assets/images/inageLogo.png", import.meta.url)
+        .href,
       date: "2025"
     },
     {
       role: "Estágio Técnico-Profissional",
       company: "Conselho Municipal da Cidade de Xai-Xai",
-      companylogo: require("./assets/images/cmcxxLogo.png"),
+      companylogo: new URL("./assets/images/cmcxxLogo.png", import.meta.url)
+        .href,
       date: "Julho 2024 – Maio 2025"
     },
     {
       role: "Estágio de Desenvolvimento de Sistemas (Componente de Especialização)",
       company: "Universidade Save",
-      companylogo: require("./assets/images/UniSave_logo.png"),
+      companylogo: new URL("./assets/images/UniSave_logo.png", import.meta.url)
+        .href,
       date: "Julho 2023 – Novembro 2023"
     },
     {
       role: "Estágio Técnico-Profissional",
       company: "Universidade Save",
-      companylogo: require("./assets/images/UniSave_logo.png"),
+      companylogo: new URL("./assets/images/UniSave_logo.png", import.meta.url)
+        .href,
       date: "Fevereiro 2023 – Maio 2023"
     }
   ]
@@ -208,7 +212,7 @@ const bigProjects = {
   subtitle: "PROJECTOS ACADÉMICOS E PESSOAIS QUE DESENVOLVI",
   projects: [
     {
-      image: require("./assets/images/stock.png"),
+      image: new URL("./assets/images/stock.png", import.meta.url).href,
       projectName: "Stock&venda",
       projectDesc:
         "Sistema web de gestão de stock e vendas para optimizar operações comerciais.",
@@ -220,7 +224,7 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/recfacial.png"),
+      image: new URL("./assets/images/recfacial.png", import.meta.url).href,
       projectName: "Reconhecimento Facial",
       projectDesc:
         "Projecto de especialização na Universidade Save: controlo de acesso por reconhecimento facial, com alertas de segurança.",
@@ -247,7 +251,7 @@ const achievementSection = {
     {
       title: "Licenciatura em Informática",
       subtitle: "Universidade Save · 2024",
-      image: require("./assets/images/UniSave_logo.png"),
+      image: new URL("./assets/images/UniSave_logo.png", import.meta.url).href,
       imageAlt: "Logótipo da Universidade Save",
       footerLink: [
         {
@@ -259,7 +263,8 @@ const achievementSection = {
     {
       title: "Hacker Ético",
       subtitle: "Curso concluído · Cisco Networking Academy · 2025",
-      image: require("./assets/images/ethical-hacker.png"),
+      image: new URL("./assets/images/ethical-hacker.png", import.meta.url)
+        .href,
       imageAlt: "Emblema do curso Hacker Ético da Cisco",
       footerLink: [
         {
@@ -271,7 +276,10 @@ const achievementSection = {
     {
       title: "Gestão de Ameaças Cibernéticas",
       subtitle: "Curso concluído · Cisco Networking Academy · 2025",
-      image: require("./assets/images/cyber-threat-management.png"),
+      image: new URL(
+        "./assets/images/cyber-threat-management.png",
+        import.meta.url
+      ).href,
       imageAlt: "Emblema do curso Gestão de Ameaças Cibernéticas da Cisco",
       footerLink: [
         {
@@ -283,7 +291,10 @@ const achievementSection = {
     {
       title: "Fundamentos de Redes",
       subtitle: "Curso concluído · Cisco Networking Academy · 2025",
-      image: require("./assets/images/networking-essentials.png"),
+      image: new URL(
+        "./assets/images/networking-essentials.png",
+        import.meta.url
+      ).href,
       imageAlt: "Emblema do curso Fundamentos de Redes da Cisco",
       footerLink: [
         {
@@ -295,7 +306,10 @@ const achievementSection = {
     {
       title: "Fundamentos do Python I",
       subtitle: "Curso concluído · Cisco Networking Academy · 2025",
-      image: require("./assets/images/python-essentials-1.1.png"),
+      image: new URL(
+        "./assets/images/python-essentials-1.1.png",
+        import.meta.url
+      ).href,
       imageAlt: "Emblema do curso Fundamentos do Python I da Cisco",
       footerLink: [
         {
@@ -307,7 +321,8 @@ const achievementSection = {
     {
       title: "Inglês para Tecnologias de Informação II",
       subtitle: "Curso concluído · Cisco Networking Academy · 2025",
-      image: require("./assets/images/english-for-it-2.png"),
+      image: new URL("./assets/images/english-for-it-2.png", import.meta.url)
+        .href,
       imageAlt: "Emblema do curso Inglês para TI II da Cisco",
       footerLink: [
         {
@@ -319,7 +334,10 @@ const achievementSection = {
     {
       title: "Introdução à Cibersegurança",
       subtitle: "Curso concluído · Cisco Networking Academy · 2023",
-      image: require("./assets/images/introduction-to-cybersecurity.png"),
+      image: new URL(
+        "./assets/images/introduction-to-cybersecurity.png",
+        import.meta.url
+      ).href,
       imageAlt: "Emblema do curso Introdução à Cibersegurança da Cisco",
       footerLink: [
         {
@@ -331,7 +349,8 @@ const achievementSection = {
     {
       title: "Noções Básicas de Redes",
       subtitle: "Curso concluído · Cisco Networking Academy · 2023",
-      image: require("./assets/images/networking-basics.png"),
+      image: new URL("./assets/images/networking-basics.png", import.meta.url)
+        .href,
       imageAlt: "Emblema do curso Noções Básicas de Redes da Cisco",
       footerLink: [
         {
@@ -343,7 +362,7 @@ const achievementSection = {
     {
       title: "II Jornadas Científicas",
       subtitle: "Participação · Universidade Joaquim Chissano (UJC) · 2023",
-      image: require("./assets/images/ujc.png"),
+      image: new URL("./assets/images/ujc.png", import.meta.url).href,
       imageAlt: "Logótipo da Universidade Joaquim Chissano",
       footerLink: [
         {
@@ -356,7 +375,8 @@ const achievementSection = {
       title: "Informática Básica",
       subtitle:
         "Curso concluído · Centro de Formação e Residência da Paróquia do Chibuto · 2017",
-      image: require("./assets/images/paroquiChibuto.png"),
+      image: new URL("./assets/images/paroquiChibuto.png", import.meta.url)
+        .href,
       imageAlt: "Logótipo do Centro de Formação da Paróquia do Chibuto",
       footerLink: [
         {

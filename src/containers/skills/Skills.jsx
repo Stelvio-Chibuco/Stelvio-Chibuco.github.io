@@ -2,7 +2,7 @@ import React, {useContext} from "react";
 import "./Skills.scss";
 import SoftwareSkill from "../../components/softwareSkills/SoftwareSkill";
 import {illustration, skillsSection} from "../../portfolio";
-import {Fade} from "react-reveal";
+import {Fade} from "../../components/fade/Fade";
 import codingPerson from "../../assets/lottie/codingPerson";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import StyleContext from "../../contexts/StyleContext";
@@ -15,19 +15,24 @@ export default function Skills() {
   return (
     <div className={isDark ? "dark-mode main" : "main"} id="skills">
       <div className="skills-main-div">
-        <Fade fraction={0} left duration={1000}>
+        <Fade left duration={1000}>
           <div className="skills-image-div">
             {illustration.animated ? (
               <DisplayLottie animationData={codingPerson} />
             ) : (
               <img
                 alt="Homem a trabalhar"
-                src={require("../../assets/images/developerActivity.svg")}
+                src={
+                  new URL(
+                    "../../assets/images/developerActivity.svg",
+                    import.meta.url
+                  ).href
+                }
               ></img>
             )}
           </div>
         </Fade>
-        <Fade fraction={0} right duration={1000}>
+        <Fade right duration={1000}>
           <div className="skills-text-div">
             <h1
               className={isDark ? "dark-mode skills-heading" : "skills-heading"}

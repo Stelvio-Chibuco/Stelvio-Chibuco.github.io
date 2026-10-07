@@ -1,6 +1,6 @@
 import React, {useContext} from "react";
 import "./Footer.scss";
-import {Fade} from "react-reveal";
+import {Fade} from "../fade/Fade";
 import emoji from "react-easy-emoji";
 import StyleContext from "../../contexts/StyleContext";
 import Missanga from "../missanga/Missanga";
@@ -8,7 +8,7 @@ import Missanga from "../missanga/Missanga";
 export default function Footer() {
   const {isDark} = useContext(StyleContext);
   return (
-    <Fade fraction={0} bottom duration={1000} distance="5px">
+    <Fade bottom duration={1000} distance="5px">
       <div className="footer-div">
         <Missanga />
         <p className="footer-kanimambo">Kanimambo!</p>

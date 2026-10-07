@@ -2,7 +2,7 @@ import React, {useContext} from "react";
 import "./Talks.scss";
 import TalkCard from "../../components/talkCard/TalkCard";
 import {talkSection} from "../../portfolio";
-import {Fade} from "react-reveal";
+import {Fade} from "../../components/fade/Fade";
 import StyleContext from "../../contexts/StyleContext";
 
 export default function Talks() {
@@ -11,7 +11,7 @@ export default function Talks() {
     return null;
   }
   return (
-    <Fade fraction={0} bottom duration={1000} distance="20px">
+    <Fade bottom duration={1000} distance="20px">
       <div className="main" id="talks">
         <div className="talk-header">
           <h1 className="talk-header-title">{talkSection.title}</h1>
