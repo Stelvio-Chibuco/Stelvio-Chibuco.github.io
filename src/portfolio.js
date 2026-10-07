@@ -20,13 +20,13 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Stélvio Chibuco",
+  username: "Stelvio 'cybergorilla' Chibuco",
   title: "Saudações, seja bem-vindo(a) ao meu DeveloperFólio",
   subTitle: emoji(
-    "Um apaixonado desenvolvedor full stack 🚀 com experiência na construção de aplicações web e mobile com JavaScript, Reactjs, Nodejs, React Native, Python, PHP e outras linguagens, bibliotecas e frameworks interessantes."
+    "Um apaixonado desenvolvedor full stack 🚀 com experiência na construção de aplicações web e mobile com JavaScript, Reactjs, Nodejs, React Native, Python, Django, Flutter e outras bibliotecas e frameworks interessantes."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1SnVDQmICiTiIbJl-MLxtmh2_ikq4e2iK/view?usp=drive_link", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -38,7 +38,7 @@ const socialMediaLinks = {
   gmail: "stelviochibuco@outlook.com",
   gitlab: "https://gitlab.com/Stelvio-Chibuco",
   facebook: "https://web.facebook.com/stelvio.chibuco/",
-  Twitter: "https://twitter.com/StelvioChibuco",
+  twitter: "https://twitter.com/StelvioChibuco",
   medium: "https://medium.com/@stelviochibuco799",
   stackoverflow:
     "https://stackoverflow.com/users/22986839/st%c3%a9lvio-chibuco",
@@ -55,11 +55,11 @@ const skillsSection = {
     "UM DESENVOLVEDOR FULL STACK COLOSSAL QUE QUER EXPLORAR TODA TECNOLOGIA:",
   skills: [
     emoji(
-      "⚡ Desenvolver interfaces altamente interativas para suas aplicações web e mobile"
+      "⚡ Desenvolver interfaces altamente interactivas para suas aplicações web e mobile;"
     ),
-    emoji("⚡ Aplicações Web Progressivas (PWA) em pilhas normais e SPA"),
+    emoji("⚡ Aplicações Web Progressivas (PWA) em pilhas normais e SPA;"),
     emoji(
-      "⚡ Integração de serviços de terceiros como Firebase, AWS, Digital Ocean..."
+      "⚡ Integração de serviços de terceiros como Firebase, AWS, Digital Ocean e outros serviços de nuvem."
     )
   ],
 
@@ -144,7 +144,7 @@ const educationInfo = {
       subHeader:
         "Licenciatura em Informática Com Especialização em Engenharia de Desenvolvimento de Sistemas",
       duration: "Março de 2020 - Outubro de 2024",
-      desc: "Classificado entre os 20% melhores do curso. Tendo frequentado disciplinas sobre Engenharia de Software, Segurança na Web, Sistemas Operacionais, IA, ..."
+      desc: "Classificado entre os 20% melhores do curso. Tendo frequentado disciplinas sobre Engenharia de Software, Segurança Cibernética, Sistemas Operacionais, IA, ..."
     }
   ]
 };
@@ -160,11 +160,19 @@ const techStack = {
     },
     {
       Stack: "Back-end",
-      progressPercentage: "85%"
+      progressPercentage: "90%"
     },
     {
       Stack: "Programação",
       progressPercentage: "95%"
+    },
+    {
+      Stack: "Linux",
+      progressPercentage: "99%"
+    },
+    {
+      Stack: "Microsoft",
+      progressPercentage: "98%"
     }
   ],
   displayCodersrank: true // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
@@ -176,28 +184,28 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Licenciatura em Informática",
+      role: "Estágio Técnico Profissional",
       company: "UniSave",
       companylogo: require("./assets/images/UniSave_logo.png"),
-      date: "Março de 2020 – Outubro de 2024"
+      date: "Fevereiro 2023 – Maio 2023"
     },
     {
-      role: "Estágio Técnico Profissional de Informática",
-      company: "UniSave",
-      companylogo: require("./assets/images/UniSave_logo.png"),
-      date: "Fevereiro 2023 – Junho 2023"
-    },
-    {
-      role: "Estágio em Engenharia de Desenvolvimento de Software",
+      role: "Estágio de Desenvolvimento de Software",
       company: "UniSave",
       companylogo: require("./assets/images/UniSave_logo.png"),
       date: "Julho 2023 – Novembro 2023"
     },
     {
-      role: "Técnico Profissional De Inofrmática",
+      role: "Estágio Técnico Profissional",
       company: "CMC De Xai-Xai",
-      companylogo: require("./assets/images/UniSave_logo.png"),
-      date: "Julho 2024 – 2025"
+      companylogo: require("./assets/images/cmcxxLogo.png"),
+      date: "Julho 2024 – Maio 2025"
+    },
+    {
+      role: "Estágio Técnico Profissional",
+      company: "INAGE - Gaza",
+      companylogo: require("./assets/images/inageLogo.png"),
+      date: "Abril 2025"
     }
   ]
 };
@@ -213,17 +221,17 @@ const openSource = {
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Grandes Projetos",
-  subtitle: "ALGUMAS STARTUPS E EMPRESAS QUE AJUDEI A CRIAR SUA TECNOLOGIA",
+  title: "Grandes Projectos",
+  subtitle: "ALGUMAS STARTUPS FEITAS POR MIM",
   projects: [
     {
-      image: require("./assets/images/stock.jpeg"),
+      image: require("./assets/images/stock.png"),
       projectName: "Stock&venda",
-      projectDesc: "Optimização de operações comerciais!",
+      projectDesc: "Optimizando operações comerciais!",
       footerLink: [
         {
           name: "Visite",
-          url: "https://github.com/Stelvio-Chibuco/stock-e-venda-php.git"
+          url: "https://youtu.be/dv1NwONwx_w"
         }
         //  you can add extra buttons here.
       ]
@@ -236,7 +244,7 @@ const bigProjects = {
       footerLink: [
         {
           name: "Visite",
-          url: "https://github.com/Stelvio-Chibuco/Recfacial.git"
+          url: "https://youtu.be/u0O1K8IOGkM"
         }
       ]
     }
@@ -254,10 +262,82 @@ const achievementSection = {
 
   achievementsCards: [
     {
+      title: "Informática Básica",
+      subtitle: "Centro de Formação e Residência da Paróquia do Chibuto",
+      image: require("./assets/images/paroquiChibuto.png"),
+      imageAlt: "CFRPC Logo",
+      footerLink: [
+        {
+          name: "certificação",
+          url: "https://drive.google.com/file/d/1uoox3sm5BDrULBVYoJfVhuGkFD15oy2O/view?usp=sharing"
+        }
+      ]
+    },
+    {
+      title: "Licenciatura em Informática",
+      subtitle: "Universidade Save",
+      image: require("./assets/images/UniSave_logo.png"),
+      imageAlt: "UniSave Logo",
+      footerLink: [
+        {
+          name: "certificação",
+          url: "https://drive.google.com/file/d/1dpVwjR2a9267Vpnbt7T3_SMpQi2SYjSE/view?usp=sharing"
+        }
+      ]
+    },
+    {
+      title: "II Jornadas Cientificas",
+      subtitle: "Universidade Joaquim Chissano (UJC)",
+      image: require("./assets/images/ujc.png"),
+      imageAlt: "UJC Logo",
+      footerLink: [
+        {
+          name: "certificação",
+          url: "https://drive.google.com/file/d/108DS8U7LKpglYVM1wxtcGvc8llBV-XSc/view?usp=sharing"
+        }
+      ]
+    },    
+    {
+      title: "Inglês para Tecnologias de Informação II",
+      subtitle: "CISCO Networking Academy",
+      image: require("./assets/images/english-for-it-2.png"),
+      imageAlt: "CISCO badge",
+      footerLink: [
+        {
+          name: "certificação",
+          url: "https://drive.google.com/file/d/1_D76UZVnIGT_2da2IdfGQNjqXJgPBygj/view?usp=sharing"
+        }
+      ]
+    },    
+    {
+      title: "Noções básicas de rede",
+      subtitle: "CISCO Networking Academy",
+      image: require("./assets/images/networking-basics.png"),
+      imageAlt: "CISCO badge",
+      footerLink: [
+        {
+          name: "certificação",
+          url: "https://drive.google.com/file/d/1Sv-Ygst34LewA4AuMGfQbTqHwO1vKXlT/view?usp=sharing"
+        }
+      ]
+    },
+    {
+      title: "Fundamentos de Redes",
+      subtitle: "CISCO Networking Academy",
+      image: require("./assets/images/networking-essentials.png"),
+      imageAlt: "CISCO badge",
+      footerLink: [
+        {
+          name: "certificação",
+          url: "https://drive.google.com/file/d/1lLHkm6XABprQANadYpjsOiw_idZqJwrT/view?usp=sharing"
+        }
+      ]
+    },
+    {
       title: "Introdução a Cibersegurança",
-      subtitle: "",
-      image: require("./assets/images/network basics.png"),
-      imageAlt: "Google Code-In Logo",
+      subtitle: "CISCO Networking Academy",
+      image: require("./assets/images/introduction-to-cybersecurity.png"),
+      imageAlt: "CISCO badge",
       footerLink: [
         {
           name: "certificação",
@@ -266,18 +346,41 @@ const achievementSection = {
       ]
     },
     {
-      title: "Noções básicas de rede",
-      subtitle: "",
-      image: require("./assets/images/cybersecurity.png"),
-      imageAlt: "Google Assistant Action Logo",
+      title: "Gestão de ameaças cibernéticas",
+      subtitle: "CISCO Networking Academy",
+      image: require("./assets/images/cyber-threat-management.png"),
+      imageAlt: "CISCO badge",
       footerLink: [
         {
           name: "certificação",
-          url: "https://drive.google.com/file/d/1GLhs1dlExjpwx7sf-0JgzCrpX2xry5FT/view?usp=sharing"
+          url: "https://drive.google.com/file/d/1oWoR28-3udWVHymMgRj7hEwWFb9mmjZL/view?usp=sharing"
         }
       ]
     },
-
+    {
+      title: "Hacker Ético",
+      subtitle: "CISCO Networking Academy",
+      image: require("./assets/images/ethical-hacker.png"),
+      imageAlt: "CISCO badge",
+      footerLink: [
+        {
+          name: "certificação",
+          url: "https://drive.google.com/file/d/1wCrJGkJFwnzAyUn0jzNpctxfU81HPs3k/view?usp=sharing"
+        }
+      ]
+    },
+    {
+      title: "Fundamentos do Python I",
+      subtitle: "CISCO Networking Academy",
+      image: require("./assets/images/python-essentials-1.1.png"),
+      imageAlt: "CISCO badge",
+      footerLink: [
+        {
+          name: "certificação",
+          url: "https://drive.google.com/file/d/15uOxH40vsJJyuaUExyoz5QgEoOnWPcSj/view?usp=sharing"
+        }
+      ]
+    },             
     {
       title: "Desenvolvedor de aplicativos da Web PWA",
       subtitle: "",
@@ -330,14 +433,14 @@ const blogSection = {
 const talkSection = {
   title: "PALESTRAS",
   subtitle: emoji(
-    "ADORO COMPARTILHAR MEU CONHECIMENTO LIMITADO E RECEBER UM CRACHÁ DE PALESTRANTE 😅"
+    "AdoroO COMPARTILHAR MEU CONHECIMENTO LIMITADO E RECEBER UM CRACHÁ DE PALESTRANTE 😅"
   ),
 
   talks: [
     {
       title: "OpenGL no Ubuntu",
       subtitle:
-        "Breve demonstração Teorica e pratica para desenvolvimento OpenGL no sistema Linux (Ubuntu 20.04 LTS).",
+        "Breve demonstração Teórica e prática para desenvolvimento OpenGL no sistema Linux (Ubuntu 20.04 LTS).",
       slides_url:
         "https://cyber-gorilla.blogspot.com/2023/11/slides-opengl.html",
       event_url:
@@ -361,8 +464,8 @@ const podcastSection = {
 const contactInfo = {
   title: emoji("Entre em Contacto ☎️"),
   subtitle:
-    "Quer discutir um projecto ou apenas cumprimentar?  estou aberto para todos.",
-  number: "",
+    "Quer discutir um projecto ou apenas cumprimentar? Estou aberto para todos.",
+  number: "+258827669125",
   email_address: "stelviochibuco@outlook.com"
 };
 
