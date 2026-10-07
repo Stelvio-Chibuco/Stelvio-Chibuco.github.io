@@ -7,12 +7,12 @@ import {Fade} from "react-reveal";
 
 export default function GithubProfileCard({prof}) {
   if (isHireable) {
-    prof.hireable = "Yes";
+    prof.hireable = "Sim";
   } else {
-    prof.hireable = "No";
+    prof.hireable = "Não";
   }
   return (
-    <Fade bottom duration={1000} distance="20px">
+    <Fade fraction={0} bottom duration={1000} distance="20px">
       <div className="main" id="contact">
         <h1 className="prof-title">Entre em contacto comigo!</h1>
         <div className="row">

@@ -14,7 +14,7 @@ export default function Podcast() {
     return null;
   }
   return (
-    <Fade bottom duration={1000} distance="20px">
+    <Fade fraction={0} bottom duration={1000} distance="20px">
       <div className="main">
         <div className="podcast-header">
           <h1 className="podcast-header-title">{podcastSection.title}</h1>

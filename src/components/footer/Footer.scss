@@ -13,3 +13,20 @@
   margin-top: 2rem;
   padding-bottom: 1rem;
 }
+
+.footer-div .missanga {
+  margin-bottom: 1.5rem;
+}
+
+.footer-kanimambo {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin: 0 0 0.5rem 0;
+  color: $machanganaVermelho;
+}
+
+.dark-mode .footer-kanimambo {
+  color: $machanganaOcre;
+}

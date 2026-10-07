@@ -21,7 +21,7 @@ export default function EducationCard({school}) {
     console.error(`Image of ${school.name} is missing in education section`);
   return (
     <div>
-      <Fade left duration={1000}>
+      <Fade fraction={0} left duration={1000}>
         <div className="education-card">
           {school.logo && (
             <div className="education-card-left">

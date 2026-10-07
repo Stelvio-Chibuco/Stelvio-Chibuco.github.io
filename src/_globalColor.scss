@@ -2,9 +2,17 @@
 Certain colors are used for different and multiply types of elements. 
 For greater control over colors visit each components .scss file. */
 
+// Identidade machangana: cores do xibelani, das capulanas e das missangas
+$machanganaVermelho: #c0262d;
+$machanganaVermelhoEscuro: #8e1b1f;
+$machanganaOcre: #e8a317;
+$machanganaIndigo: #1f3a93;
+$machanganaVerde: #1e7b4f;
+$machanganaCreme: #fbf3e6;
+
 // button colors
-$buttonColor: #55198b;
-$buttonHover: #8c43ce;
+$buttonColor: $machanganaVermelho;
+$buttonHover: $machanganaVermelhoEscuro;
 $topButtonHover: #000;
 
 // text colors light theme
@@ -19,7 +27,7 @@ $blogCardTitleColor: #262626;
 $textColorDark: #ffffff;
 
 // toggle switch colors
-$toggleCheck: #2196f3;
+$toggleCheck: $machanganaOcre;
 $toggleSwitchSliderBG: #ccc;
 
 // githubRepo specific colors
@@ -28,12 +36,12 @@ $githubRepoCardColor: rgb(88, 96, 105);
 $githubRepoCardRepoCardStatsColor: rgb(106, 115, 125);
 $githubRepoCardRepoNameColor: rgb(36, 41, 46);
 $githubProfileCardLocationTS: #ffebcd;
-$githubProfileCardBorder: #6c63ff;
+$githubProfileCardBorder: $machanganaVermelho;
 
 // light background colors
 $lightBackground1: #fff;
 $lightBackground2: rgb(255, 255, 255);
-$lightBackground3: #f5f2f4;
+$lightBackground3: $machanganaCreme;
 $blogCardContainerColor: #586069;
 // dark background colors
 $darkBackground: #171c28;
@@ -60,7 +68,7 @@ $experienceCardBannerLG: linear-gradient(
 // borders
 $progressBarBackground: rgb(243, 239, 239);
 $lightBorder1: rgba(211, 211, 211, 0.397);
-$educationCardBorder: #a9a7f9;
+$educationCardBorder: $machanganaOcre;
 
 // hovers
 $achievementCertificateCardHoverDark: rgba(255, 255, 255, 0.2);
@@ -69,12 +77,12 @@ $headerHoverBG: #f4f4f4;
 $contactDetailHoverTS: #b5b5b5;
 
 // misc backgrounds
-$progressBarSpanBG: #aaa5ff;
+$progressBarSpanBG: $machanganaOcre;
 $iconBackground: #333;
 $appHeaderBG: #282c34;
 
 // misc colors
-$skillsColor: #645beb;
+$skillsColor: $machanganaIndigo;
 $appLink: #09d3ac;
 
 // social media icons

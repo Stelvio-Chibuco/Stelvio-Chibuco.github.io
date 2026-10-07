@@ -8,7 +8,7 @@ import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 export default function StackProgress() {
   if (techStack.viewSkillBars) {
     return (
-      <Fade bottom duration={1000} distance="20px">
+      <Fade fraction={0} bottom duration={1000} distance="20px">
         <div className="skills-container">
           <div className="skills-bar">
             <h1 className="skills-heading">Competência</h1>
@@ -32,7 +32,7 @@ export default function StackProgress() {
               <DisplayLottie animationData={Build} />
             ) : (
               <img
-                alt="Skills"
+                alt="Competências"
                 src={require("../../assets/images/skill.svg")}
               />
             )}

@@ -3,17 +3,20 @@ import "./Footer.scss";
 import {Fade} from "react-reveal";
 import emoji from "react-easy-emoji";
 import StyleContext from "../../contexts/StyleContext";
+import Missanga from "../missanga/Missanga";
 
 export default function Footer() {
   const {isDark} = useContext(StyleContext);
   return (
-    <Fade bottom duration={1000} distance="5px">
+    <Fade fraction={0} bottom duration={1000} distance="5px">
       <div className="footer-div">
+        <Missanga />
+        <p className="footer-kanimambo">Kanimambo!</p>
         <p className={isDark ? "dark-mode footer-text" : "footer-text"}>
-          {emoji("Made with ❤️  by Stélvio Chibuco")}
+          {emoji("Feito com ❤️ em Moçambique por Stélvio Chibuco")}
         </p>
         <p className={isDark ? "dark-mode footer-text" : "footer-text"}>
-          Theme by <a href="https://github.com/Stelvio-Chibuco">cybergorilla</a>
+          Tema por <a href="https://github.com/Stelvio-Chibuco">cybergorilla</a>
         </p>
       </div>
     </Fade>
