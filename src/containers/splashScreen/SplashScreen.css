@@ -6,12 +6,32 @@
   min-height: 100vh;
 }
 
-.splash-animation-container {
-  height: 50vh;
+.splash-logo {
+  width: min(80vw, 420px);
+  height: auto;
+  margin-bottom: 2rem;
+  animation: splash-logo-in 1.2s ease-out both;
+}
+
+@keyframes splash-logo-in {
+  from {
+    opacity: 0;
+    transform: scale(0.85);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .splash-logo {
+    animation: none;
+  }
 }
 
 .splash-title-container {
-  font-size: 2.5rem;
+  font-size: clamp(1.6rem, 7vw, 2.5rem);
   text-decoration: none;
 }
 .splash-title {
@@ -20,4 +40,12 @@
   font-variant-ligatures: no-common-ligatures;
   -webkit-font-variant-ligatures: no-common-ligatures;
   padding: 0 20px;
+}
+
+.splash-title {
+  color: #c0262d;
+}
+
+.dark-mode .splash-title {
+  color: #e8a317;
 }

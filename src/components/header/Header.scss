@@ -60,6 +60,30 @@
   line-height: normal;
 }
 
+.header .logo {
+  display: flex;
+  align-items: center;
+}
+
+.header .logo-image {
+  height: 44px;
+  width: auto;
+  margin-right: 6px;
+}
+
+@media (max-width: 480px) {
+  .header .logo-image {
+    height: 34px;
+  }
+  .header .logo-bracket {
+    display: none;
+  }
+  .header .logo-name {
+    font-size: 0.85em;
+    padding: 0 4px;
+  }
+}
+
 .header .logo-name {
   color: $machanganaVermelho;
   font-family: "Agustina Regular";
@@ -183,5 +207,15 @@
 @media (max-width: 960px) and (min-width: 768px) {
   .header {
     font-size: 12px;
+  }
+}
+
+// Com o logótipo, o menu precisa de menos espaço lateral para caber numa linha
+@media (min-width: 48em) and (max-width: 1400px) {
+  .header li a {
+    padding: 15px 10px;
+  }
+  .header .logo-bracket {
+    display: none;
   }
 }

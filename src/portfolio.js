@@ -3,14 +3,19 @@
 // To change portfolio colors globally go to the  _globalColor.scss file
 
 import emoji from "react-easy-emoji";
-import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
+
+// Logótipo (cabeçalho e ecrã de abertura)
+
+const brand = {
+  logo: new URL("./assets/images/logo-cybergorilla.png", import.meta.url).href,
+  logoAlt: "Logótipo cybergorilla Tecnologia"
+};
 
 // Splash Screen
 
 const splashScreen = {
   enabled: true, // set false to disable splash screen
-  animation: splashAnimation,
-  duration: 2000 // Set animation duration as per your animation
+  duration: 2000 // Duração do ecrã de abertura em milissegundos
 };
 
 // Summary And Greeting Section
@@ -472,6 +477,7 @@ const twitterDetails = {
 const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
 export {
+  brand,
   illustration,
   greeting,
   socialMediaLinks,
