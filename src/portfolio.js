@@ -20,10 +20,10 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Stelvio 'cybergorilla' Chibuco",
-  title: "Saudações, seja bem-vindo(a) ao meu DeveloperFólio",
+  username: "Stélvio Chibuco",
+  title: "Olá, sou o Stélvio",
   subTitle: emoji(
-    "Um apaixonado desenvolvedor full stack 🚀 com experiência na construção de aplicações web e mobile com JavaScript, Reactjs, Nodejs, React Native, Python, Django, Flutter e outras bibliotecas e frameworks interessantes."
+    "Licenciado em Informática (Engenharia de Desenvolvimento de Sistemas) pela Universidade Save. Desenvolvo soluções eficientes, seguras e escaláveis, com experiência em programação, engenharia de software, segurança informática, redes de computadores e inteligência artificial."
   ),
   resumeLink:
     "https://drive.google.com/file/d/1SnVDQmICiTiIbJl-MLxtmh2_ikq4e2iK/view?usp=drive_link", // Set to empty to hide the button
@@ -38,7 +38,9 @@ const socialMediaLinks = {
   gmail: "stelviochibuco@outlook.com",
   gitlab: "https://gitlab.com/Stelvio-Chibuco",
   facebook: "https://web.facebook.com/stelvio.chibuco/",
-  twitter: "https://twitter.com/StelvioChibuco",
+  instagram: "", // Coloca aqui o link do teu Instagram
+  whatsapp: "https://wa.me/258827669125",
+  twitter: "https://x.com/StelvioChibuco",
   medium: "https://medium.com/@stelviochibuco799",
   stackoverflow:
     "https://stackoverflow.com/users/22986839/st%c3%a9lvio-chibuco",
@@ -51,15 +53,19 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "Quem sou eu?",
-  subTitle:
-    "UM DESENVOLVEDOR FULL STACK COLOSSAL QUE QUER EXPLORAR TODA TECNOLOGIA:",
+  subTitle: "DESENVOLVIMENTO DE SISTEMAS, SEGURANÇA INFORMÁTICA E REDES",
   skills: [
     emoji(
-      "⚡ Desenvolver interfaces altamente interactivas para suas aplicações web e mobile;"
+      "⚡ Engenharia de software em todo o ciclo: análise de requisitos, arquitectura, testes e segurança"
     ),
-    emoji("⚡ Aplicações Web Progressivas (PWA) em pilhas normais e SPA;"),
     emoji(
-      "⚡ Integração de serviços de terceiros como Firebase, AWS, Digital Ocean e outros serviços de nuvem."
+      "⚡ Programação em Java, C#, PHP e JavaScript, com orientação a objectos e programação funcional"
+    ),
+    emoji(
+      "⚡ Administração de redes e de sistemas Linux (Debian, Ubuntu, Kali) e Windows"
+    ),
+    emoji(
+      "⚡ Bases de dados relacionais e não relacionais, e visão computacional aplicada (reconhecimento facial)"
     )
   ],
 
@@ -67,6 +73,10 @@ const skillsSection = {
 https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
+    {
+      skillName: "java",
+      fontAwesomeClassname: "fab fa-java"
+    },
     {
       skillName: "html-5",
       fontAwesomeClassname: "fab fa-html5"
@@ -76,48 +86,28 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-css3-alt"
     },
     {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
-    },
-    {
       skillName: "JavaScript",
       fontAwesomeClassname: "fab fa-js"
     },
     {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
-    },
-    {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
-    },
-    {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
-    },
-    {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
-    },
-    {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
-    },
-    {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
+      skillName: "php",
+      fontAwesomeClassname: "fab fa-php"
     },
     {
       skillName: "python",
       fontAwesomeClassname: "fab fa-python"
     },
     {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
+      skillName: "sql-database",
+      fontAwesomeClassname: "fas fa-database"
+    },
+    {
+      skillName: "linux",
+      fontAwesomeClassname: "fab fa-linux"
+    },
+    {
+      skillName: "windows",
+      fontAwesomeClassname: "fab fa-windows"
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -131,20 +121,13 @@ const educationInfo = {
     {
       schoolName: "Universidade Save",
       logo: require("./assets/images/UniSave_logo.png"),
-      subHeader: "Especialização em Engenharia de Desenvolvimento de Sistemas",
-      duration: "Fevereiro de 2022 - Dezembro de 2023",
-      desc: "Participou das Jornadas Cientificas II na UJC.",
-      descBullets: [
-        "Sistema de controle de acesso baseado no reconhecimento facial e emissão de alertas de segurança."
-      ]
-    },
-    {
-      schoolName: "Universidade Save",
-      logo: require("./assets/images/UniSave_logo.png"),
       subHeader:
-        "Licenciatura em Informática Com Especialização em Engenharia de Desenvolvimento de Sistemas",
+        "Licenciatura em Informática (Engenharia de Desenvolvimento de Sistemas)",
       duration: "Março de 2020 - Outubro de 2024",
-      desc: "Classificado entre os 20% melhores do curso. Tendo frequentado disciplinas sobre Engenharia de Software, Segurança Cibernética, Sistemas Operacionais, IA, ..."
+      desc: "Engenharia de software, segurança informática, redes de computadores, sistemas operativos, bases de dados e inteligência artificial.",
+      descBullets: [
+        "Componente de especialização: sistema de controlo de acesso baseado em reconhecimento facial, com emissão de alertas de segurança."
+      ]
     }
   ]
 };
@@ -152,7 +135,7 @@ const educationInfo = {
 // Your top 3 proficient stacks/tech experience
 
 const techStack = {
-  viewSkillBars: true, //Set it to true to show Proficiency Section
+  viewSkillBars: false, //Set it to true to show Proficiency Section
   experience: [
     {
       Stack: "Front-end/Design", //Insert stack or technology you have experience in
@@ -184,28 +167,28 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Estágio Técnico Profissional",
-      company: "UniSave",
-      companylogo: require("./assets/images/UniSave_logo.png"),
-      date: "Fevereiro 2023 – Maio 2023"
+      role: "Estágio Técnico-Profissional",
+      company: "Instituto Nacional de Governo Electrónico (INAGE) – Gaza",
+      companylogo: require("./assets/images/inageLogo.png"),
+      date: "2025"
     },
     {
-      role: "Estágio de Desenvolvimento de Software",
-      company: "UniSave",
-      companylogo: require("./assets/images/UniSave_logo.png"),
-      date: "Julho 2023 – Novembro 2023"
-    },
-    {
-      role: "Estágio Técnico Profissional",
-      company: "CMC De Xai-Xai",
+      role: "Estágio Técnico-Profissional",
+      company: "Conselho Municipal da Cidade de Xai-Xai",
       companylogo: require("./assets/images/cmcxxLogo.png"),
       date: "Julho 2024 – Maio 2025"
     },
     {
-      role: "Estágio Técnico Profissional",
-      company: "INAGE - Gaza",
-      companylogo: require("./assets/images/inageLogo.png"),
-      date: "Abril 2025"
+      role: "Estágio de Desenvolvimento de Sistemas (Componente de Especialização)",
+      company: "Universidade Save",
+      companylogo: require("./assets/images/UniSave_logo.png"),
+      date: "Julho 2023 – Novembro 2023"
+    },
+    {
+      role: "Estágio Técnico-Profissional",
+      company: "Universidade Save",
+      companylogo: require("./assets/images/UniSave_logo.png"),
+      date: "Fevereiro 2023 – Maio 2023"
     }
   ]
 };
@@ -221,29 +204,29 @@ const openSource = {
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Grandes Projectos",
-  subtitle: "ALGUMAS STARTUPS FEITAS POR MIM",
+  title: "Projectos em Destaque",
+  subtitle: "PROJECTOS ACADÉMICOS E PESSOAIS QUE DESENVOLVI",
   projects: [
     {
       image: require("./assets/images/stock.png"),
       projectName: "Stock&venda",
-      projectDesc: "Optimizando operações comerciais!",
+      projectDesc:
+        "Sistema web de gestão de stock e vendas para optimizar operações comerciais.",
       footerLink: [
         {
-          name: "Visite",
+          name: "Ver demonstração",
           url: "https://youtu.be/dv1NwONwx_w"
         }
-        //  you can add extra buttons here.
       ]
     },
     {
       image: require("./assets/images/recfacial.png"),
       projectName: "Reconhecimento Facial",
       projectDesc:
-        "Escolha inteligente para um controle de acesso moderno e eficiente.",
+        "Projecto de especialização na Universidade Save: controlo de acesso por reconhecimento facial, com alertas de segurança.",
       footerLink: [
         {
-          name: "Visite",
+          name: "Ver demonstração",
           url: "https://youtu.be/u0O1K8IOGkM"
         }
       ]
@@ -256,137 +239,131 @@ const bigProjects = {
 // Include certificates, talks etc
 
 const achievementSection = {
-  title: emoji("Conquistas e Certificações 🏆 "),
+  title: emoji("Formação e Certificados 🎓"),
   subtitle:
-    "Conquistas, Certificações, Cartas de Prêmios e Algumas Coisas Legais que Eu Fiz!",
+    "Cursos concluídos e certificados obtidos ao longo da minha formação.",
 
   achievementsCards: [
     {
-      title: "Informática Básica",
-      subtitle: "Centro de Formação e Residência da Paróquia do Chibuto",
-      image: require("./assets/images/paroquiChibuto.png"),
-      imageAlt: "CFRPC Logo",
-      footerLink: [
-        {
-          name: "certificação",
-          url: "https://drive.google.com/file/d/1uoox3sm5BDrULBVYoJfVhuGkFD15oy2O/view?usp=sharing"
-        }
-      ]
-    },
-    {
       title: "Licenciatura em Informática",
-      subtitle: "Universidade Save",
+      subtitle: "Universidade Save · 2024",
       image: require("./assets/images/UniSave_logo.png"),
-      imageAlt: "UniSave Logo",
+      imageAlt: "Logótipo da Universidade Save",
       footerLink: [
         {
-          name: "certificação",
+          name: "Ver certificado",
           url: "https://drive.google.com/file/d/1dpVwjR2a9267Vpnbt7T3_SMpQi2SYjSE/view?usp=sharing"
         }
       ]
     },
     {
-      title: "II Jornadas Cientificas",
-      subtitle: "Universidade Joaquim Chissano (UJC)",
-      image: require("./assets/images/ujc.png"),
-      imageAlt: "UJC Logo",
-      footerLink: [
-        {
-          name: "certificação",
-          url: "https://drive.google.com/file/d/108DS8U7LKpglYVM1wxtcGvc8llBV-XSc/view?usp=sharing"
-        }
-      ]
-    },    
-    {
-      title: "Inglês para Tecnologias de Informação II",
-      subtitle: "CISCO Networking Academy",
-      image: require("./assets/images/english-for-it-2.png"),
-      imageAlt: "CISCO badge",
-      footerLink: [
-        {
-          name: "certificação",
-          url: "https://drive.google.com/file/d/1_D76UZVnIGT_2da2IdfGQNjqXJgPBygj/view?usp=sharing"
-        }
-      ]
-    },    
-    {
-      title: "Noções básicas de rede",
-      subtitle: "CISCO Networking Academy",
-      image: require("./assets/images/networking-basics.png"),
-      imageAlt: "CISCO badge",
-      footerLink: [
-        {
-          name: "certificação",
-          url: "https://drive.google.com/file/d/1Sv-Ygst34LewA4AuMGfQbTqHwO1vKXlT/view?usp=sharing"
-        }
-      ]
-    },
-    {
-      title: "Fundamentos de Redes",
-      subtitle: "CISCO Networking Academy",
-      image: require("./assets/images/networking-essentials.png"),
-      imageAlt: "CISCO badge",
-      footerLink: [
-        {
-          name: "certificação",
-          url: "https://drive.google.com/file/d/1lLHkm6XABprQANadYpjsOiw_idZqJwrT/view?usp=sharing"
-        }
-      ]
-    },
-    {
-      title: "Introdução a Cibersegurança",
-      subtitle: "CISCO Networking Academy",
-      image: require("./assets/images/introduction-to-cybersecurity.png"),
-      imageAlt: "CISCO badge",
-      footerLink: [
-        {
-          name: "certificação",
-          url: "https://drive.google.com/file/d/1GLhs1dlExjpwx7sf-0JgzCrpX2xry5FT/view?usp=sharing"
-        }
-      ]
-    },
-    {
-      title: "Gestão de ameaças cibernéticas",
-      subtitle: "CISCO Networking Academy",
-      image: require("./assets/images/cyber-threat-management.png"),
-      imageAlt: "CISCO badge",
-      footerLink: [
-        {
-          name: "certificação",
-          url: "https://drive.google.com/file/d/1oWoR28-3udWVHymMgRj7hEwWFb9mmjZL/view?usp=sharing"
-        }
-      ]
-    },
-    {
       title: "Hacker Ético",
-      subtitle: "CISCO Networking Academy",
+      subtitle: "Curso concluído · Cisco Networking Academy · 2025",
       image: require("./assets/images/ethical-hacker.png"),
-      imageAlt: "CISCO badge",
+      imageAlt: "Emblema do curso Hacker Ético da Cisco",
       footerLink: [
         {
-          name: "certificação",
+          name: "Ver certificado",
           url: "https://drive.google.com/file/d/1wCrJGkJFwnzAyUn0jzNpctxfU81HPs3k/view?usp=sharing"
         }
       ]
     },
     {
-      title: "Fundamentos do Python I",
-      subtitle: "CISCO Networking Academy",
-      image: require("./assets/images/python-essentials-1.1.png"),
-      imageAlt: "CISCO badge",
+      title: "Gestão de Ameaças Cibernéticas",
+      subtitle: "Curso concluído · Cisco Networking Academy · 2025",
+      image: require("./assets/images/cyber-threat-management.png"),
+      imageAlt: "Emblema do curso Gestão de Ameaças Cibernéticas da Cisco",
       footerLink: [
         {
-          name: "certificação",
+          name: "Ver certificado",
+          url: "https://drive.google.com/file/d/1oWoR28-3udWVHymMgRj7hEwWFb9mmjZL/view?usp=sharing"
+        }
+      ]
+    },
+    {
+      title: "Fundamentos de Redes",
+      subtitle: "Curso concluído · Cisco Networking Academy · 2025",
+      image: require("./assets/images/networking-essentials.png"),
+      imageAlt: "Emblema do curso Fundamentos de Redes da Cisco",
+      footerLink: [
+        {
+          name: "Ver certificado",
+          url: "https://drive.google.com/file/d/1lLHkm6XABprQANadYpjsOiw_idZqJwrT/view?usp=sharing"
+        }
+      ]
+    },
+    {
+      title: "Fundamentos do Python I",
+      subtitle: "Curso concluído · Cisco Networking Academy · 2025",
+      image: require("./assets/images/python-essentials-1.1.png"),
+      imageAlt: "Emblema do curso Fundamentos do Python I da Cisco",
+      footerLink: [
+        {
+          name: "Ver certificado",
           url: "https://drive.google.com/file/d/15uOxH40vsJJyuaUExyoz5QgEoOnWPcSj/view?usp=sharing"
         }
       ]
-    },             
+    },
     {
-      title: "Desenvolvedor de aplicativos da Web PWA",
-      subtitle: "",
-      image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
-      footerLink: [{name: "certificação", url: ""}]
+      title: "Inglês para Tecnologias de Informação II",
+      subtitle: "Curso concluído · Cisco Networking Academy · 2025",
+      image: require("./assets/images/english-for-it-2.png"),
+      imageAlt: "Emblema do curso Inglês para TI II da Cisco",
+      footerLink: [
+        {
+          name: "Ver certificado",
+          url: "https://drive.google.com/file/d/1_D76UZVnIGT_2da2IdfGQNjqXJgPBygj/view?usp=sharing"
+        }
+      ]
+    },
+    {
+      title: "Introdução à Cibersegurança",
+      subtitle: "Curso concluído · Cisco Networking Academy · 2023",
+      image: require("./assets/images/introduction-to-cybersecurity.png"),
+      imageAlt: "Emblema do curso Introdução à Cibersegurança da Cisco",
+      footerLink: [
+        {
+          name: "Ver certificado",
+          url: "https://drive.google.com/file/d/1GLhs1dlExjpwx7sf-0JgzCrpX2xry5FT/view?usp=sharing"
+        }
+      ]
+    },
+    {
+      title: "Noções Básicas de Redes",
+      subtitle: "Curso concluído · Cisco Networking Academy · 2023",
+      image: require("./assets/images/networking-basics.png"),
+      imageAlt: "Emblema do curso Noções Básicas de Redes da Cisco",
+      footerLink: [
+        {
+          name: "Ver certificado",
+          url: "https://drive.google.com/file/d/1Sv-Ygst34LewA4AuMGfQbTqHwO1vKXlT/view?usp=sharing"
+        }
+      ]
+    },
+    {
+      title: "II Jornadas Científicas",
+      subtitle: "Participação · Universidade Joaquim Chissano (UJC) · 2023",
+      image: require("./assets/images/ujc.png"),
+      imageAlt: "Logótipo da Universidade Joaquim Chissano",
+      footerLink: [
+        {
+          name: "Ver certificado",
+          url: "https://drive.google.com/file/d/108DS8U7LKpglYVM1wxtcGvc8llBV-XSc/view?usp=sharing"
+        }
+      ]
+    },
+    {
+      title: "Informática Básica",
+      subtitle:
+        "Curso concluído · Centro de Formação e Residência da Paróquia do Chibuto · 2017",
+      image: require("./assets/images/paroquiChibuto.png"),
+      imageAlt: "Logótipo do Centro de Formação da Paróquia do Chibuto",
+      footerLink: [
+        {
+          name: "Ver certificado",
+          url: "https://drive.google.com/file/d/1uoox3sm5BDrULBVYoJfVhuGkFD15oy2O/view?usp=sharing"
+        }
+      ]
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -396,13 +373,12 @@ const achievementSection = {
 
 const blogSection = {
   title: "Blog",
-  subtitle:
-    "Com amor pelo desenvolvimento de coisas legais, adoro escrever e ensinar aos outros o que aprendi.",
+  subtitle: "Escrevo sobre tecnologia e partilho o que aprendo.",
   displayMediumBlogs: "false", // Set true to display fetched medium blogs instead of hardcoded ones
   blogs: [
     {
       url: "https://nhamahangotec.blogspot.com/",
-      title: "DEPIOMENTO E RECOMENDAÇÃO",
+      title: "DEPOIMENTO E RECOMENDAÇÃO",
       description: "Credibilidade e impacto positivo"
     },
     {
@@ -432,9 +408,7 @@ const blogSection = {
 
 const talkSection = {
   title: "PALESTRAS",
-  subtitle: emoji(
-    "AdoroO COMPARTILHAR MEU CONHECIMENTO LIMITADO E RECEBER UM CRACHÁ DE PALESTRANTE 😅"
-  ),
+  subtitle: "PARTILHAR CONHECIMENTO COM A COMUNIDADE",
 
   talks: [
     {
@@ -458,13 +432,12 @@ const podcastSection = {
 
   // Please Provide with Your Podcast embeded Link
   podcast: [""],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 const contactInfo = {
   title: emoji("Entre em Contacto ☎️"),
-  subtitle:
-    "Quer discutir um projecto ou apenas cumprimentar? Estou aberto para todos.",
+  subtitle: "Quer discutir um projecto ou uma oportunidade? Entre em contacto.",
   number: "+258827669125",
   email_address: "stelviochibuco@outlook.com"
 };

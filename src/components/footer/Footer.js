@@ -16,7 +16,11 @@ export default function Footer() {
           {emoji("Feito com ❤️ em Moçambique por Stélvio Chibuco")}
         </p>
         <p className={isDark ? "dark-mode footer-text" : "footer-text"}>
-          Tema por <a href="https://github.com/Stelvio-Chibuco">cybergorilla</a>
+          Baseado no{" "}
+          <a href="https://github.com/saadpasta/developerFolio">
+            developerFolio
+          </a>{" "}
+          de Saad Pasta
         </p>
       </div>
     </Fade>
