@@ -79,7 +79,7 @@ export function Hero() {
             <span className="flex items-center gap-1.5"><MapPin className="size-4" /> {tr(profile.location)}</span>
             <a href={profile.links.github} target="_blank" rel="noreferrer" className="flex items-center gap-1.5 hover:text-white"><GithubIcon className="size-4" /> GitHub</a>
             <a href={profile.links.linkedin} target="_blank" rel="noreferrer" className="flex items-center gap-1.5 hover:text-white"><LinkedinIcon className="size-4" /> LinkedIn</a>
-            <a href={profile.cv} target="_blank" rel="noreferrer" className="flex items-center gap-1.5 hover:text-white"><Download className="size-4" /> {tr(ui.cv)}</a>
+            <a href={asset(tr(profile.cv))} target="_blank" rel="noreferrer" className="flex items-center gap-1.5 hover:text-white"><Download className="size-4" /> {tr(ui.cv)}</a>
           </motion.div>
         </div>
         <Collage />
