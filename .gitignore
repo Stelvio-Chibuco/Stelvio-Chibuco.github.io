@@ -1,5 +1,3 @@
-# Ignore the .env file to prevent it from being tracked by Git
-.env
-node_modules/
-build/
-.eslintcache
+node_modules
+dist
+*.tsbuildinfo
