@@ -134,7 +134,7 @@ export const projects: Project[] = [
   {
     id: 'boleia',
     name: 'Boleia+ · Chibuto Ride',
-    kind: t('Startup · Mobility platform', 'Startup · Plataforma de mobilidade'),
+    kind: t('Startup · Mobility platform · App in closed beta', 'Startup · Plataforma de mobilidade · App em testes fechados'),
     tagline: t('Safe, traceable ride-hailing for Chibuto and Gaza province', 'Transporte por app seguro e rastreável para Chibuto e a província de Gaza'),
     problem: t(
       'Informal transport in Gaza has no verified drivers, no trip traceability and no emergency mechanism — passengers simply have to trust whoever stops.',
@@ -151,7 +151,7 @@ export const projects: Project[] = [
       { src: '/img/projects/boleia-cover.webp', alt: t('Boleia+ brand', 'Marca Boleia+'), contain: '#1b7a45' },
       { src: '/img/projects/boleia-driver.webp', alt: t('Driver app', 'App do motorista'), phone: true },
     ],
-    links: [],
+    links: [{ label: t('Live operations dashboard', 'Dashboard de operações (online)'), url: 'https://admin.16-16-231-39.sslip.io/login' }],
     accent: '#34d399',
   },
   {
@@ -201,7 +201,7 @@ export const process = [
   { title: t('Discovery call', 'Conversa inicial'), text: t('We clarify goals, users and budget. Free.', 'Clarificamos objectivos, utilizadores e orçamento. Grátis.') },
   { title: t('Proposal', 'Proposta'), text: t('Fixed scope, timeline and price — in writing.', 'Âmbito, prazo e preço fixos — por escrito.') },
   { title: t('Weekly demos', 'Demos semanais'), text: t('You see real progress every week and give feedback.', 'Vê progresso real todas as semanas e dá feedback.') },
-  { title: t('Launch & support', 'Lançamento e suporte'), text: t('Deployment, handover, training and 30 days of fixes.', 'Publicação, entrega, formação e 30 dias de correcções.') },
+  { title: t('Launch & support', 'Lançamento e suporte'), text: t('Deployment, handover, training and 15 days of free fixes.', 'Publicação, entrega, formação e 15 dias de correcções grátis.') },
 ]
 
 export const about = t(
@@ -211,13 +211,13 @@ export const about = t(
 
 export const experience = [
   { role: t('Freelance Full-Stack Engineer', 'Engenheiro Full-Stack Freelancer'), org: 'Independent', period: t('2023 — present', '2023 — presente'), text: t('E-commerce, mobility and access-control systems for clients and own products (Motice, Boleia+, SaveGuard).', 'Sistemas de e-commerce, mobilidade e controlo de acesso para clientes e produtos próprios (Motice, Boleia+, SaveGuard).'), logo: '' },
-  { role: t('Technical-Professional Intern', 'Estagiário Técnico-Profissional'), org: 'INAGE — Instituto Nacional de Governo Electrónico (Gaza)', period: t('2025', '2025'), text: t('E-government IT support and systems at provincial level.', 'Apoio técnico e sistemas de governo electrónico a nível provincial.'), logo: '/img/logos/inage.webp' },
-  { role: t('Technical-Professional Intern', 'Estagiário Técnico-Profissional'), org: 'Conselho Municipal da Cidade de Xai-Xai', period: t('2024 — 2025', '2024 — 2025'), text: t('IT infrastructure, networks and support for municipal services.', 'Infraestrutura informática, redes e apoio aos serviços municipais.'), logo: '/img/logos/cmcxx.webp' },
-  { role: t('Software Development Intern', 'Estagiário de Desenvolvimento de Software'), org: 'Universidade Save', period: t('2023', '2023'), text: t('Systems development specialisation; built the first version of the facial-recognition access control system.', 'Componente de especialização em desenvolvimento de sistemas; criei a primeira versão do sistema de controlo de acesso por reconhecimento facial.'), logo: '/img/logos/unisave.webp' },
+  { role: t('Technical-Professional Intern', 'Estagiário Técnico-Profissional'), org: 'INAGE — Instituto Nacional de Governo Electrónico (Gaza)', period: t('2025', '2025'), text: t('Substitute trainer for the Basic Computing course and IT technical support.', 'Formador substituto do curso de Informática Básica e suporte técnico informático.'), logo: '/img/logos/inage.webp' },
+  { role: t('Technical-Professional Intern', 'Estagiário Técnico-Profissional'), org: 'Conselho Municipal da Cidade de Xai-Xai', period: t('2024 — 2025', '2024 — 2025'), text: t('IT technical support for municipal services: hardware, software, networks and users.', 'Suporte técnico informático aos serviços municipais: equipamento, software, redes e utilizadores.'), logo: '/img/logos/cmcxx.webp' },
+  { role: t('Technical-Professional Intern — Systems Development', 'Estagiário Técnico-Profissional — Desenvolvimento de Sistemas'), org: 'Universidade Save', period: t('2023', '2023'), text: t('Installed and configured the university e-mail server (Zimbra).', 'Instalação e configuração do servidor de e-mail da universidade (Zimbra).'), logo: '/img/logos/unisave.webp' },
 ]
 
 export const education = [
-  { title: t('BSc in Informatics — Systems Development Engineering', 'Licenciatura em Informática — Engenharia de Desenvolvimento de Sistemas'), org: 'Universidade Save', period: '2020 — 2024', text: t('Top 20% of class. Software engineering, security, networks, AI, databases, computer graphics.', 'Entre os 20% melhores do curso. Engenharia de software, segurança, redes, IA, bases de dados, computação gráfica.'), logo: '/img/logos/unisave.webp' },
+  { title: t('BSc in Informatics — Systems Development Engineering', 'Licenciatura em Informática — Engenharia de Desenvolvimento de Sistemas'), org: 'Universidade Save', period: '2020 — 2024', text: t('Top 20% of class. Software engineering, security, networks, AI, databases, computer graphics. Final project: facial-recognition access control with security alerts.', 'Entre os 20% melhores do curso. Engenharia de software, segurança, redes, IA, bases de dados, computação gráfica. Projecto final: controlo de acesso por reconhecimento facial com alertas de segurança.'), logo: '/img/logos/unisave.webp' },
   { title: t('II Scientific Conference — presenter', 'II Jornadas Científicas — participação'), org: 'Universidade Joaquim Chissano', period: '2023', text: t('Presented the facial-recognition access control research.', 'Apresentação da investigação sobre controlo de acesso por reconhecimento facial.'), logo: '/img/logos/ujc.webp' },
 ]
 
@@ -226,7 +226,7 @@ export const skills = [
   { group: t('Frontend', 'Frontend'), items: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS', 'Bootstrap', 'PWA'] },
   { group: t('Mobile', 'Mobile'), items: ['Flutter', 'Dart'] },
   { group: t('Data', 'Dados'), items: ['PostgreSQL', 'PostGIS', 'MySQL', 'Redis', 'SQLite'] },
-  { group: t('DevOps', 'DevOps'), items: ['Docker', 'Nginx', 'Linux (Debian, Ubuntu, Kali)', 'Git', 'CI/CD'] },
+  { group: t('DevOps', 'DevOps'), items: ['Docker', 'Nginx', 'Linux (Debian, Ubuntu, Kali)', 'Zimbra mail server', 'Git', 'CI/CD'] },
   { group: t('AI & Security', 'IA e Segurança'), items: ['Computer vision', 'TensorFlow.js', 'OpenCV', 'Ethical hacking', 'Networking'] },
 ]
 
