@@ -14,7 +14,7 @@ export const profile = {
   whatsapp: '258847669125', // número com indicativo, sem "+"
   phoneDisplay: '+258 84 766 9125',
   location: t('Xai-Xai, Mozambique · UTC+2', 'Xai-Xai, Moçambique · UTC+2'),
-  cv: 'https://drive.google.com/file/d/1SnVDQmICiTiIbJl-MLxtmh2_ikq4e2iK/view?usp=drive_link',
+  cv: t('/cv/Stelvio-Chibuco-CV-EN.pdf', '/cv/Stelvio-Chibuco-CV-PT.pdf'),
   links: {
     github: 'https://github.com/Stelvio-Chibuco',
     linkedin: 'https://www.linkedin.com/in/st%C3%A9lvio-chibuco-301676263',
