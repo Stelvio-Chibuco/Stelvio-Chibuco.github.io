@@ -3,14 +3,10 @@ import { Menu, X } from 'lucide-react'
 import { useEffect, useState } from 'react'
 import { profile, ui } from '../content'
 import { useLang, useT } from '../i18n'
-import { waLink } from './util'
+import { asset, waLink } from './util'
 
 export function Monogram() {
-  return (
-    <span className="grid size-9 place-items-center rounded-xl bg-gradient-to-br from-amber-300 to-orange-glow font-display text-sm font-bold text-ink-950 shadow-lg shadow-amber-500/20">
-      SC
-    </span>
-  )
+  return <img src={asset('/img/logo.webp')} alt="cybergorilla" width={40} height={40} className="size-10 rounded-full shadow-lg shadow-sky-900/40" />
 }
 
 function LangSwitch() {
