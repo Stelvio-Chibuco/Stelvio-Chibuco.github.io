@@ -51,7 +51,7 @@ function Timeline({ items }: { items: { title: string; org: string; period: stri
             {it.logo ? (
               <img src={asset(it.logo)} alt="" className="size-10 shrink-0 rounded-xl bg-white object-contain p-1" loading="lazy" />
             ) : (
-              <span className="grid size-10 shrink-0 place-items-center rounded-xl bg-gradient-to-br from-amber-300 to-orange-glow font-display text-xs font-bold text-ink-950">SC</span>
+              <img src={asset('/img/logo.webp')} alt="" className="size-10 shrink-0 rounded-full" loading="lazy" />
             )}
             <div>
               <p className="font-semibold text-white">{it.title}</p>
