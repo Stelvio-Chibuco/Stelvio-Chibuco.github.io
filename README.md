@@ -4,6 +4,10 @@ Portfólio pessoal bilingue (EN/PT), em React 19, Vite, Tailwind CSS 4 e Motion.
 
 - **Editar o conteúdo:** todos os textos, projectos, experiência, certificações e contactos estão em
   [`src/content.ts`](src/content.ts). Não é preciso mexer nos componentes.
+- **CV:** os PDFs servidos no site estão em `public/cv/`. As versões editáveis (`.docx`) estão em
+  [`cv/`](cv/): edite-as no Word ou LibreOffice e exporte para PDF, ou altere o texto em
+  `cv/gerar_cv.py` e corra `python3 cv/gerar_cv.py` seguido de
+  `soffice --headless --convert-to pdf --outdir public/cv cv/*.docx`.
 - **Imagens:** em `public/img/` (WebP optimizado). Para um projecto novo, junte as capturas em
   `public/img/projects/` e acrescente uma entrada em `projects` no `content.ts`.
 
