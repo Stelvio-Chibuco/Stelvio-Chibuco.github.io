@@ -29,5 +29,6 @@ npm run build    # gera a pasta dist/
 **Cloudflare Pages:** em *Workers & Pages → Create → Pages → Connect to Git*, use o comando
 `npm run build` e a pasta `dist`.
 
-**GitHub Pages:** o workflow `.github/workflows/deploy.yml` publica no branch `gh-pages` a cada push
-para `main` (precisa do GitHub Actions activo na conta).
+**Endereço antigo (GitHub Pages):** `stelvio-chibuco.github.io` só redirecciona para o Netlify,
+mantendo o caminho do link (ex.: `/cv/...`). A página de redireccionamento está em `github-pages/` e
+o workflow `.github/workflows/deploy.yml` publica-a no branch `gh-pages` quando ela muda.
