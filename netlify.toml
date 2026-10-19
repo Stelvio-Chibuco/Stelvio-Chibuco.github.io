@@ -1,0 +1,12 @@
+# Deploy grátis na Netlify (sem cartão): ligue o repositório e a Netlify usa estas definições.
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+[[headers]]
+  for = "/img/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"

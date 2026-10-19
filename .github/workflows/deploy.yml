@@ -1,42 +1,25 @@
-name: Build and Deploy
-env:
-  GITHUB_USERNAME: ${{ github.repository_owner }}
-  REACT_APP_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Criado automaticamente pelo GitHub Actions
-  USE_GITHUB_DATA: "true"
-  MEDIUM_USERNAME: "stelviochibuco799"
+# Publica no GitHub Pages (branch gh-pages) quando o GitHub Actions estiver disponível na conta.
+# Alternativa sem Actions: Netlify ou Cloudflare Pages (ver README).
+name: Deploy (GitHub Pages)
 on:
-  workflow_dispatch:
   push:
-    branches:
-      - main
+    branches: [main]
+  workflow_dispatch:
+
 permissions:
   contents: write
-concurrency:
-  group: deploy
-  cancel-in-progress: true
+
 jobs:
-  build-and-deploy:
+  deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout 🛎️
-        uses: actions/checkout@v4
-        with:
-          persist-credentials: false
-
-      - name: Setup Node.js 🔧
-        uses: actions/setup-node@v4
-        with:
-          node-version: 22
-          cache: npm
-
-      - name: Install, Test and Build 🔧
-        run: |
-          npm ci
-          npm test
-          npm run build
-
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: npm }
+      - run: npm ci
+      - run: npm run build
+      - run: cp dist/index.html dist/404.html
+      - uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
-          folder: build
+          folder: dist

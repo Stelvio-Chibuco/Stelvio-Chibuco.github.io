@@ -1,36 +1,36 @@
-@font-face {
-  font-family: "Agustina Regular";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Agustina Regular"),
-    url("./assets/fonts/Agustina.woff") format("woff");
-  font-display: swap;
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", "Inter", ui-sans-serif, sans-serif;
+  --color-ink-950: #07080c;
+  --color-ink-900: #0d0f15;
+  --color-ink-800: #141720;
+  --color-ink-700: #1e2230;
+  --color-amber-glow: #f59e0b;
+  --color-orange-glow: #fb923c;
 }
-@font-face {
-  font-family: "Montserrat";
-  src: local("Montserrat"),
-    url("./assets/fonts/Montserrat-Regular.ttf") format("woff");
-  font-display: swap;
+
+@layer base {
+  html { scroll-behavior: smooth; color-scheme: dark; }
+  body { @apply bg-ink-950 font-sans text-zinc-300 antialiased; }
+  ::selection { background: rgb(245 158 11 / 0.35); color: white; }
+  :focus-visible { outline: 2px solid var(--color-amber-glow); outline-offset: 3px; border-radius: 6px; }
+  section[id] { scroll-margin-top: 5rem; }
 }
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
-html,
-body {
-  scroll-behavior: smooth;
-}
-body {
-  margin: 0;
-  font: 19px / 23px Montserrat, "Montserrat", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-/* Media Query */
-@media (max-width: 1380px) {
-  html,
-  body {
-    font-size: rem;
-    line-height: normal;
+
+@layer components {
+  .gradient-text { @apply bg-gradient-to-r from-amber-300 via-amber-glow to-orange-glow bg-clip-text text-transparent; }
+  .card { @apply rounded-3xl border border-white/[0.07] bg-white/[0.025]; }
+  .chip { @apply inline-flex items-center rounded-full border border-white/10 bg-white/[0.04] px-3 py-1 text-xs font-medium text-zinc-300; }
+  .noise {
+    background-image: radial-gradient(rgb(255 255 255 / 0.06) 1px, transparent 1px);
+    background-size: 22px 22px;
+    mask-image: radial-gradient(ellipse at top, black 20%, transparent 70%);
   }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
 }
