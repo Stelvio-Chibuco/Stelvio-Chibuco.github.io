@@ -36,7 +36,7 @@ export const ui = {
   stats: [
     { value: '4', label: t('production-grade systems', 'sistemas em produção') },
     { value: '7', label: t('Cisco certifications', 'certificações Cisco') },
-    { value: 'Top 20%', label: t('of BSc class, Universidade Save', 'do curso, Universidade Save') },
+    { value: '2024', label: t('BSc in Informatics, Universidade Save', 'licenciatura em Informática, Universidade Save') },
     { value: '3', label: t('public-sector internships', 'estágios no sector público') },
   ],
   workEyebrow: t('Selected work', 'Projectos seleccionados'),
@@ -210,8 +210,8 @@ export const process = [
 ]
 
 export const about = t(
-  'I am a systems development engineer from Gaza, Mozambique, with a BSc in Informatics from Universidade Save (top 20% of my class). I design and build complete systems — backend, frontend, mobile and deployment — with a strong focus on security, which I studied through Cisco’s cybersecurity and ethical-hacking tracks. I like products that solve local problems with global-quality engineering.',
-  'Sou engenheiro de desenvolvimento de sistemas, de Gaza, Moçambique, licenciado em Informática pela Universidade Save (entre os 20% melhores do curso). Desenho e desenvolvo sistemas completos — backend, frontend, mobile e publicação — com forte atenção à segurança, que estudei nas formações de cibersegurança e hacking ético da Cisco. Gosto de produtos que resolvem problemas locais com engenharia de qualidade internacional.',
+  'I am a systems development engineer from Gaza, Mozambique, with a BSc in Informatics from Universidade Save. I design and build complete systems — backend, frontend, mobile and deployment — with a strong focus on security, which I studied through Cisco’s cybersecurity and ethical-hacking tracks. I like products that solve local problems with global-quality engineering.',
+  'Sou engenheiro de desenvolvimento de sistemas, de Gaza, Moçambique, licenciado em Informática pela Universidade Save. Desenho e desenvolvo sistemas completos — backend, frontend, mobile e publicação — com forte atenção à segurança, que estudei nas formações de cibersegurança e hacking ético da Cisco. Gosto de produtos que resolvem problemas locais com engenharia de qualidade internacional.',
 )
 
 export const experience = [
@@ -222,8 +222,8 @@ export const experience = [
 ]
 
 export const education = [
-  { title: t('BSc in Informatics — Systems Development Engineering', 'Licenciatura em Informática — Engenharia de Desenvolvimento de Sistemas'), org: 'Universidade Save', period: '2020 — 2024', text: t('Top 20% of class. Software engineering, security, networks, AI, databases, computer graphics. Final project: facial-recognition access control with security alerts.', 'Entre os 20% melhores do curso. Engenharia de software, segurança, redes, IA, bases de dados, computação gráfica. Projecto final: controlo de acesso por reconhecimento facial com alertas de segurança.'), logo: '/img/logos/unisave.webp' },
-  { title: t('II Scientific Conference — presenter', 'II Jornadas Científicas — participação'), org: 'Universidade Joaquim Chissano', period: '2023', text: t('Presented the facial-recognition access control research.', 'Apresentação da investigação sobre controlo de acesso por reconhecimento facial.'), logo: '/img/logos/ujc.webp' },
+  { title: t('BSc in Informatics — Systems Development Engineering', 'Licenciatura em Informática — Engenharia de Desenvolvimento de Sistemas'), org: 'Universidade Save', period: '2020 — 2024', text: t('Software engineering, security, networks, AI, databases, computer graphics. Final project: facial-recognition access control with security alerts.', 'Engenharia de software, segurança, redes, IA, bases de dados, computação gráfica. Projecto final: controlo de acesso por reconhecimento facial com alertas de segurança.'), logo: '/img/logos/unisave.webp' },
+  { title: t('II Scientific Conference — presenter', 'II Jornadas Científicas — apresentação'), org: 'Universidade Joaquim Chissano', period: '2023', text: t('Presented my facial-recognition access control project.', 'Apresentei o meu projecto de controlo de acesso por reconhecimento facial.'), logo: '/img/logos/ujc.webp' },
 ]
 
 export const skills = [
