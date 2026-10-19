@@ -214,8 +214,41 @@ const openSource = {
 
 const bigProjects = {
   title: "Projectos em Destaque",
-  subtitle: "PROJECTOS ACADÉMICOS E PESSOAIS QUE DESENVOLVI",
+  subtitle: "PRODUTOS, TRABALHOS PARA CLIENTES E PROJECTOS ACADÉMICOS",
   projects: [
+    {
+      image: new URL("./assets/images/saveguard.jpg", import.meta.url).href,
+      imageAlt:
+        "SaveGuard: painel de controlo, monitor ao vivo e alertas no telemóvel",
+      projectName: "SaveGuard",
+      projectDesc:
+        "Controlo de acesso por reconhecimento facial: a porta abre para as pessoas autorizadas e, quando alguém desconhecido tenta entrar, envia um alerta com fotografia para o telemóvel. Produto da cybergorilla Tecnologia.",
+      footerLink: [
+        {
+          name: "Visitar site",
+          url: "https://saveguard.onrender.com/"
+        },
+        {
+          name: "Experimentar demonstração",
+          url: "https://saveguard.onrender.com/demo"
+        }
+      ]
+    },
+    {
+      // Imagem provisória: substituir por uma captura real do site
+      image: new URL("./assets/images/motice-congelados.jpg", import.meta.url)
+        .href,
+      imageAlt: "Motice Congelados: loja online",
+      projectName: "Motice Congelados",
+      projectDesc:
+        "Site e loja online para a Motice Congelados, empresa de produtos congelados. Trabalho para cliente.",
+      footerLink: [
+        {
+          name: "Visitar site",
+          url: "https://moticecongelados.duckdns.org/"
+        }
+      ]
+    },
     {
       image: new URL("./assets/images/stock.png", import.meta.url).href,
       projectName: "Stock&venda",
@@ -230,7 +263,7 @@ const bigProjects = {
     },
     {
       image: new URL("./assets/images/recfacial.png", import.meta.url).href,
-      projectName: "Reconhecimento Facial",
+      projectName: "Reconhecimento Facial (protótipo académico)",
       projectDesc:
         "Projecto de especialização na Universidade Save: controlo de acesso por reconhecimento facial, com alertas de segurança.",
       footerLink: [

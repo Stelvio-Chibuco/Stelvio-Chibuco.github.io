@@ -5,14 +5,6 @@ import {Fade} from "../../components/fade/Fade";
 import StyleContext from "../../contexts/StyleContext";
 
 export default function StartupProject() {
-  function openUrlInNewTab(url) {
-    if (!url) {
-      return;
-    }
-    var win = window.open(url, "_blank");
-    win.focus();
-  }
-
   const {isDark} = useContext(StyleContext);
   if (!bigProjects.display) {
     return null;
@@ -47,8 +39,9 @@ export default function StartupProject() {
                     <div className="project-image">
                       <img
                         src={project.image}
-                        alt={project.projectName}
+                        alt={project.imageAlt || project.projectName}
                         className="card-image"
+                        loading="lazy"
                       ></img>
                     </div>
                   ) : null}
@@ -69,15 +62,17 @@ export default function StartupProject() {
                       <div className="project-card-footer">
                         {project.footerLink.map((link, i) => {
                           return (
-                            <span
+                            <a
                               key={i}
                               className={
                                 isDark ? "dark-mode project-tag" : "project-tag"
                               }
-                              onClick={() => openUrlInNewTab(link.url)}
+                              href={link.url}
+                              target="_blank"
+                              rel="noopener noreferrer"
                             >
                               {link.name}
-                            </span>
+                            </a>
                           );
                         })}
                       </div>
