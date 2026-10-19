@@ -27,15 +27,15 @@ export const ui = {
   available: t('Available for freelance & remote work', 'Disponível para freelance e trabalho remoto'),
   heroTitle: [t('I build software that', 'Crio software que'), t('runs real businesses.', 'põe negócios a funcionar.')],
   heroText: t(
-    'Full-stack engineer — Python, Django, FastAPI, React and Flutter. From online stores with mobile-money payments to ride-hailing platforms and AI access control: designed, built and deployed end-to-end.',
-    'Engenheiro full-stack — Python, Django, FastAPI, React e Flutter. De lojas online com pagamentos M-Pesa a plataformas de transporte e controlo de acesso com IA: desenho, desenvolvimento e publicação de ponta a ponta.',
+    'Full-stack developer — Python, Django, FastAPI, React and Flutter. From online stores with mobile-money payments to ride-hailing platforms and AI access control: designed, built and deployed end-to-end.',
+    'Desenvolvedor full-stack — Python, Django, FastAPI, React e Flutter. De lojas online com pagamentos M-Pesa a plataformas de transporte e controlo de acesso com IA: desenho, desenvolvimento e publicação de ponta a ponta.',
   ),
   seeWork: t('See my work', 'Ver projectos'),
   whatsapp: t('Chat on WhatsApp', 'Falar no WhatsApp'),
   cv: t('Download CV', 'Descarregar CV'),
   stats: [
-    { value: '4', label: t('production-grade systems', 'sistemas em produção') },
-    { value: '7', label: t('Cisco certifications', 'certificações Cisco') },
+    { value: '4', label: t('systems built and deployed', 'sistemas desenvolvidos') },
+    { value: '7', label: t('Cisco courses completed', 'cursos Cisco concluídos') },
     { value: '2024', label: t('BSc in Informatics, Universidade Save', 'licenciatura em Informática, Universidade Save') },
     { value: '3', label: t('public-sector internships', 'estágios no sector público') },
   ],
@@ -51,11 +51,11 @@ export const ui = {
   servicesTitle: t('How I can help your business', 'Como posso ajudar o seu negócio'),
   processTitle: t('How we work together', 'Como trabalhamos juntos'),
   aboutEyebrow: t('About', 'Sobre mim'),
-  aboutTitle: t('Engineer, problem-solver, builder.', 'Engenheiro, solucionador de problemas, construtor.'),
+  aboutTitle: t('Developer, problem-solver, builder.', 'Desenvolvedor, solucionador de problemas, construtor.'),
   experience: t('Experience', 'Experiência'),
   education: t('Education', 'Formação'),
   skillsTitle: t('Tech I work with', 'Tecnologias que uso'),
-  certsTitle: t('Certifications', 'Certificações'),
+  certsTitle: t('Courses & certificates', 'Cursos e certificados'),
   certView: t('View certificate', 'Ver certificado'),
   writingTitle: t('Writing & talks', 'Artigos e palestras'),
   languages: t('Languages', 'Línguas'),
@@ -210,12 +210,12 @@ export const process = [
 ]
 
 export const about = t(
-  'I am a systems development engineer from Gaza, Mozambique, with a BSc in Informatics from Universidade Save. I design and build complete systems — backend, frontend, mobile and deployment — with a strong focus on security, which I studied through Cisco’s cybersecurity and ethical-hacking tracks. I like products that solve local problems with global-quality engineering.',
-  'Sou engenheiro de desenvolvimento de sistemas, de Gaza, Moçambique, licenciado em Informática pela Universidade Save. Desenho e desenvolvo sistemas completos — backend, frontend, mobile e publicação — com forte atenção à segurança, que estudei nas formações de cibersegurança e hacking ético da Cisco. Gosto de produtos que resolvem problemas locais com engenharia de qualidade internacional.',
+  'I am a systems developer from Gaza, Mozambique, with a BSc in Informatics (Systems Development Engineering) from Universidade Save. I design and build complete systems — backend, frontend, mobile and deployment — with a strong focus on security, which I studied through Cisco’s cybersecurity and ethical-hacking tracks. I like products that solve local problems with global-quality engineering.',
+  'Sou desenvolvedor de sistemas, de Gaza, Moçambique, licenciado em Informática (Engenharia de Desenvolvimento de Sistemas) pela Universidade Save. Desenho e desenvolvo sistemas completos — backend, frontend, mobile e publicação — com forte atenção à segurança, que estudei nas formações de cibersegurança e hacking ético da Cisco. Gosto de produtos que resolvem problemas locais com engenharia de qualidade internacional.',
 )
 
 export const experience = [
-  { role: t('Freelance Full-Stack Engineer', 'Engenheiro Full-Stack Freelancer'), org: 'Independent', period: t('2023 — present', '2023 — presente'), text: t('E-commerce, mobility and access-control systems for clients and own products (Motice, Boleia+, SaveGuard).', 'Sistemas de e-commerce, mobilidade e controlo de acesso para clientes e produtos próprios (Motice, Boleia+, SaveGuard).'), logo: '' },
+  { role: t('Freelance Full-Stack Developer', 'Desenvolvedor Full-Stack Freelancer'), org: 'Independent', period: t('2023 — present', '2023 — presente'), text: t('E-commerce, mobility and access-control systems for clients and own products (Motice, Boleia+, SaveGuard).', 'Sistemas de e-commerce, mobilidade e controlo de acesso para clientes e produtos próprios (Motice, Boleia+, SaveGuard).'), logo: '' },
   { role: t('Technical-Professional Intern', 'Estagiário Técnico-Profissional'), org: 'INAGE — Instituto Nacional de Governo Electrónico (Gaza)', period: t('2025', '2025'), text: t('Substitute trainer for the Basic Computing course and IT technical support.', 'Formador substituto do curso de Informática Básica e suporte técnico informático.'), logo: '/img/logos/inage.webp' },
   { role: t('Technical-Professional Intern', 'Estagiário Técnico-Profissional'), org: 'Conselho Municipal da Cidade de Xai-Xai', period: t('2024 — 2025', '2024 — 2025'), text: t('IT technical support for municipal services: hardware, software, networks and users.', 'Suporte técnico informático aos serviços municipais: equipamento, software, redes e utilizadores.'), logo: '/img/logos/cmcxx.webp' },
   { role: t('Technical-Professional Intern — Systems Development', 'Estagiário Técnico-Profissional — Desenvolvimento de Sistemas'), org: 'Universidade Save', period: t('2023', '2023'), text: t('Installed and configured the university e-mail server (Zimbra).', 'Instalação e configuração do servidor de e-mail da universidade (Zimbra).'), logo: '/img/logos/unisave.webp' },
