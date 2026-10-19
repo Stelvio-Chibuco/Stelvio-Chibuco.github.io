@@ -102,9 +102,14 @@ export const projects: Project[] = [
     images: [
       { src: '/img/projects/saveguard-kiosk.webp', alt: t('Door kiosk recognising an authorised person and unlocking', 'Quiosque da porta a reconhecer uma pessoa autorizada e a abrir') },
       { src: '/img/projects/saveguard-dashboard.webp', alt: t('Real-time security dashboard', 'Painel de segurança em tempo real') },
+      { src: '/img/projects/saveguard-alerts.webp', alt: t('Dashboard, door kiosk and photo alerts on the phone', 'Painel, quiosque da porta e alertas com fotografia no telemóvel'), contain: '#0b0a0f' },
       { src: '/img/projects/saveguard-landing.webp', alt: t('SaveGuard sales website', 'Site de vendas do SaveGuard') },
     ],
-    links: [{ label: t('Watch demo', 'Ver demonstração'), url: 'https://youtu.be/u0O1K8IOGkM' }],
+    links: [
+      { label: t('Visit website', 'Visitar o site'), url: 'https://saveguard.onrender.com/' },
+      { label: t('Try the live demo', 'Experimentar a demonstração'), url: 'https://saveguard.onrender.com/demo' },
+      { label: t('Watch video', 'Ver vídeo'), url: 'https://youtu.be/u0O1K8IOGkM' },
+    ],
     accent: '#22d3ee',
   },
   {
@@ -128,7 +133,7 @@ export const projects: Project[] = [
       { src: '/img/projects/motice-panel.webp', alt: t('Store management panel', 'Painel de gestão da loja') },
       { src: '/img/projects/motice-mobile.webp', alt: t('Store on a phone', 'Loja no telemóvel'), phone: true },
     ],
-    links: [],
+    links: [{ label: t('Visit the store', 'Visitar a loja'), url: 'https://moticecongelados.duckdns.org/' }],
     accent: '#facc15',
   },
   {
