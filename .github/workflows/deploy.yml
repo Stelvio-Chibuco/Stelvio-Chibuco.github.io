@@ -1,9 +1,11 @@
-# Publica no GitHub Pages (branch gh-pages) quando o GitHub Actions estiver disponível na conta.
-# Alternativa sem Actions: Netlify ou Cloudflare Pages (ver README).
-name: Deploy (GitHub Pages)
+# O site oficial está no Netlify (stelvio-chibuco.netlify.app).
+# O endereço antigo stelvio-chibuco.github.io só redirecciona para lá: este workflow
+# publica a pasta github-pages/ (página de redireccionamento) no branch gh-pages.
+name: Redireccionamento (GitHub Pages)
 on:
   push:
     branches: [main]
+    paths: [github-pages/**, .github/workflows/deploy.yml]
   workflow_dispatch:
 
 permissions:
@@ -14,12 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with: { node-version: 22, cache: npm }
-      - run: npm ci
-      - run: npm run build
-      - run: cp dist/index.html dist/404.html
       - uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
-          folder: dist
+          folder: github-pages
