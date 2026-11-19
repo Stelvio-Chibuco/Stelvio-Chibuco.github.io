@@ -29,6 +29,8 @@ LINKS = {
     "github": "https://github.com/Stelvio-Chibuco",
     "linkedin": "https://www.linkedin.com/in/st%C3%A9lvio-chibuco-301676263",
     "boleia": "https://admin.16-16-231-39.sslip.io/login",
+    "boleia_play": "https://play.google.com/store/apps/details?id=com.cybergorilla.boleiaplus",
+    "ngungunhane": "https://cybergorilla.taile1cd15.ts.net/registar",
 }
 
 
@@ -261,12 +263,18 @@ PT = {
             ],
         },
         {
-            "title": "Boleia+ · Chibuto Ride — Plataforma de mobilidade",
-            "kind": "Startup · testes fechados",
-            "stack": "Django · DRF · PostGIS · Celery · Redis · Flutter · Next.js · Leaflet",
+            "title": "Boleia+ — Plataforma de mobilidade",
+            "kind": "Startup · Google Play",
+            "stack": "Flutter · Django · DRF · PostGIS · Celery · Redis · Next.js · Leaflet",
             "bullets": [
-                "App Flutter para passageiro e motorista: registo por telefone com OTP, viagem em tempo "
-                "real, PIN de embarque e botão SOS.",
+                [
+                    "App de boleias (carro, txopela ou mota) ",
+                    ("link", "na Google Play", "boleia_play"),
+                    ", em Chibuto, Xai-Xai, Macia e Chókwè: o passageiro propõe o preço e o motorista "
+                    "aceita ou faz contraproposta; pagamento em dinheiro.",
+                ],
+                "Motoristas e passageiros com identidade verificada, botão SOS e partilha da viagem "
+                "ao vivo por link.",
                 [
                     "API geoespacial e dashboard de operações com mapas em tempo real (",
                     ("link", "em produção", "boleia"),
@@ -275,12 +283,17 @@ PT = {
             ],
         },
         {
-            "title": "Stock & Venda — Sistema de stock e vendas",
-            "kind": "Sistema de gestão",
-            "stack": "PHP · MySQL · JavaScript · Bootstrap",
+            "title": "Ngungunhane — Stock, vendas e POS",
+            "kind": "Produto SaaS",
+            "stack": "Next.js · React · PWA · ESC/POS",
             "bullets": [
-                "Catálogo, entradas de stock e vendas com actualização automática, contas de utilizador "
-                "e relatórios de vendas.",
+                "Caixa com leitura de código de barras (leitor ou câmara), impressoras térmicas "
+                "58/80 mm e recibos com QR code verificável.",
+                [
+                    "Modo restaurante, multi-loja, pagamentos M-Pesa, e-Mola e mKesh e previsão de vendas; ",
+                    ("link", "14 dias de teste grátis", "ngungunhane"),
+                    ".",
+                ],
             ],
         },
     ],
@@ -290,7 +303,7 @@ PT = {
             "title": "Desenvolvedor Full-Stack Freelancer — Independente",
             "period": "2023 — presente",
             "bullets": [
-                "Desenvolvimento de sistemas de e-commerce, mobilidade e controlo de acesso para "
+                "Desenvolvimento de sistemas de e-commerce, mobilidade, ponto de venda e controlo de acesso para "
                 "clientes e produtos próprios."
             ],
         },
@@ -401,12 +414,17 @@ EN = {
             ],
         },
         {
-            "title": "Boleia+ · Chibuto Ride — Mobility platform",
-            "kind": "Startup · closed beta",
-            "stack": "Django · DRF · PostGIS · Celery · Redis · Flutter · Next.js · Leaflet",
+            "title": "Boleia+ — Mobility platform",
+            "kind": "Startup · Google Play",
+            "stack": "Flutter · Django · DRF · PostGIS · Celery · Redis · Next.js · Leaflet",
             "bullets": [
-                "Flutter passenger and driver app: phone + OTP sign-up, live trip tracking, boarding PIN "
-                "and an SOS button.",
+                [
+                    "Ride app (car, txopela or motorbike) ",
+                    ("link", "on Google Play", "boleia_play"),
+                    ", live in Chibuto, Xai-Xai, Macia and Chókwè: the passenger proposes the fare and "
+                    "the driver accepts or counter-offers; cash payment.",
+                ],
+                "Identity-verified drivers and passengers, SOS button and live trip sharing by link.",
                 [
                     "Geospatial API and an operations dashboard with live maps (",
                     ("link", "in production", "boleia"),
@@ -415,12 +433,17 @@ EN = {
             ],
         },
         {
-            "title": "Stock & Venda — Inventory and point of sale",
-            "kind": "Business system",
-            "stack": "PHP · MySQL · JavaScript · Bootstrap",
+            "title": "Ngungunhane — Inventory, sales and POS",
+            "kind": "SaaS product",
+            "stack": "Next.js · React · PWA · ESC/POS",
             "bullets": [
-                "Product catalogue, stock intake and sales with automatic stock updates, user accounts "
-                "and sales reports.",
+                "Checkout with barcode reading (scanner or camera), 58/80 mm thermal printers and "
+                "receipts with a verifiable QR code.",
+                [
+                    "Restaurant mode, multi-store, M-Pesa, e-Mola and mKesh payments and sales forecasts; ",
+                    ("link", "14-day free trial", "ngungunhane"),
+                    ".",
+                ],
             ],
         },
     ],
@@ -429,7 +452,7 @@ EN = {
         {
             "title": "Freelance Full-Stack Developer — Independent",
             "period": "2023 — present",
-            "bullets": ["E-commerce, mobility and access-control systems for clients and my own products."],
+            "bullets": ["E-commerce, mobility, point-of-sale and access-control systems for clients and my own products."],
         },
         {
             "title": "Technical-Professional Intern — INAGE, National Institute of e-Government (Gaza)",
