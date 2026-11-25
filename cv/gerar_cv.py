@@ -31,6 +31,7 @@ LINKS = {
     "boleia": "https://admin.16-16-231-39.sslip.io/login",
     "boleia_play": "https://play.google.com/store/apps/details?id=com.cybergorilla.boleiaplus",
     "ngungunhane": "https://cybergorilla.taile1cd15.ts.net/registar",
+    "bazar": "https://cybergorilla.taile1cd15.ts.net:10000/",
 }
 
 
@@ -296,6 +297,28 @@ PT = {
                 ],
             ],
         },
+        {
+            "title": "Bazar do Povo — Marketplace",
+            "kind": "Em piloto",
+            "stack": "Django · DRF · PostgreSQL · Redis · Docker",
+            "bullets": [
+                [
+                    "Várias lojas num só checkout, pagamento retido até à entrega e ligação ao Ngungunhane "
+                    "(produtos e stock), testada de ponta a ponta no ",
+                    ("link", "piloto", "bazar"),
+                    "; 154 testes automáticos.",
+                ],
+            ],
+        },
+        {
+            "title": "Taekwondo MZ — Gestão da Federação Moçambicana de Taekwondo",
+            "kind": "Em demonstração",
+            "stack": "Django · PostgreSQL · Bootstrap 5 · Docker",
+            "bullets": [
+                "Atletas, árbitros, clubes e Selecção Nacional das 11 províncias, com cartão do atleta e "
+                "verificação da licença por QR code.",
+            ],
+        },
     ],
     "h_experience": "Experiência profissional",
     "experience": [
@@ -303,7 +326,7 @@ PT = {
             "title": "Desenvolvedor Full-Stack Freelancer — Independente",
             "period": "2023 — presente",
             "bullets": [
-                "Desenvolvimento de sistemas de e-commerce, mobilidade, ponto de venda e controlo de acesso para "
+                "Desenvolvimento de sistemas de e-commerce, marketplace, mobilidade, ponto de venda, gestão desportiva e controlo de acesso para "
                 "clientes e produtos próprios."
             ],
         },
@@ -446,13 +469,35 @@ EN = {
                 ],
             ],
         },
+        {
+            "title": "Bazar do Povo — Marketplace",
+            "kind": "Pilot",
+            "stack": "Django · DRF · PostgreSQL · Redis · Docker",
+            "bullets": [
+                [
+                    "Many shops in one checkout, payment held until delivery and a link to Ngungunhane "
+                    "(products and stock), tested end to end in the ",
+                    ("link", "pilot", "bazar"),
+                    "; 154 automated tests.",
+                ],
+            ],
+        },
+        {
+            "title": "Taekwondo MZ — Mozambican Taekwondo Federation management",
+            "kind": "In demo",
+            "stack": "Django · PostgreSQL · Bootstrap 5 · Docker",
+            "bullets": [
+                "Athletes, referees, clubs and national team across the 11 provinces, with athlete cards "
+                "and licence checks by QR code.",
+            ],
+        },
     ],
     "h_experience": "Experience",
     "experience": [
         {
             "title": "Freelance Full-Stack Developer — Independent",
             "period": "2023 — present",
-            "bullets": ["E-commerce, mobility, point-of-sale and access-control systems for clients and my own products."],
+            "bullets": ["E-commerce, marketplace, mobility, point-of-sale, sports management and access-control systems for clients and my own products."],
         },
         {
             "title": "Technical-Professional Intern — INAGE, National Institute of e-Government (Gaza)",
