@@ -34,7 +34,7 @@ export const ui = {
   whatsapp: t('Chat on WhatsApp', 'Falar no WhatsApp'),
   cv: t('Download CV', 'Descarregar CV'),
   stats: [
-    { value: '4', label: t('systems built and deployed', 'sistemas desenvolvidos') },
+    { value: '6', label: t('systems built and deployed', 'sistemas desenvolvidos') },
     { value: '7', label: t('Cisco courses completed', 'cursos Cisco concluídos') },
     { value: '2024', label: t('BSc in Informatics, Universidade Save', 'licenciatura em Informática, Universidade Save') },
     { value: '3', label: t('public-sector internships', 'estágios no sector público') },
@@ -189,6 +189,56 @@ export const projects: Project[] = [
     links: [{ label: t('Try free for 14 days', 'Experimentar 14 dias grátis'), url: 'https://cybergorilla.taile1cd15.ts.net/registar' }],
     accent: '#f59e0b',
   },
+  {
+    id: 'bazar',
+    name: 'Bazar do Povo',
+    kind: t('Marketplace · Pilot', 'Marketplace · Em piloto'),
+    tagline: t('Online marketplace where any shop in Mozambique can sell, with the payment held until delivery', 'Mercado online onde qualquer loja de Moçambique pode vender, com o pagamento retido até à entrega'),
+    problem: t(
+      'The Motice store showed that selling online with M-Pesa works, but each shop would need its own website. And paying in advance to a shop you have never heard of is a risk for the customer.',
+      'A loja Motice mostrou que vender online com M-Pesa funciona, mas cada loja precisaria do seu próprio site. E pagar adiantado a uma loja que não se conhece é um risco para o cliente.',
+    ),
+    built: [
+      t('Multi-vendor marketplace built from the Motice code: each shop has its own panel, products and delivery zones; one checkout, with the order split per shop', 'Marketplace com várias lojas, construído a partir do código da Motice: cada loja tem painel, produtos e zonas de entrega próprios; um só checkout, com a encomenda dividida por loja'),
+      t('Payment guarantee: the customer pays the Bazar and each shop\'s share is held until delivery, with a commission per order and a settlements panel', 'Garantia de pagamento: o cliente paga ao Bazar e a parte de cada loja fica retida até à entrega, com comissão por encomenda e painel de acertos'),
+      t('Link to Ngungunhane: a shop imports products, prices, stock and photos, and a confirmed order creates the sale there and lowers the stock. Tested end to end in the pilot', 'Ligação ao Ngungunhane: a loja importa produtos, preços, stock e fotos, e uma encomenda confirmada cria a venda lá e baixa o stock. Testado de ponta a ponta no piloto'),
+      t('Shop reviews, customer–shop chat and search by shop, city and province; 154 automated tests passing', 'Avaliações das lojas, conversa entre cliente e loja e pesquisa por loja, cidade e província; 154 testes automáticos a passar'),
+    ],
+    stack: ['Django', 'DRF', 'PostgreSQL', 'Redis', 'PWA', 'Docker', 'Caddy'],
+    images: [
+      { src: '/img/projects/bazar-home.webp', alt: t('Bazar do Povo home page', 'Página inicial do Bazar do Povo') },
+      { src: '/img/projects/bazar-store.webp', alt: t('A shop page with its products and delivery zones', 'Página de uma loja, com produtos e zonas de entrega') },
+      { src: '/img/projects/bazar-seller-panel.webp', alt: t('Seller panel', 'Painel do vendedor') },
+      { src: '/img/projects/bazar-mobile-product.webp', alt: t('Product page on a phone', 'Página de produto no telemóvel'), phone: true },
+    ],
+    links: [{ label: t('Visit the pilot', 'Visitar o piloto'), url: 'https://cybergorilla.taile1cd15.ts.net:10000/' }],
+    accent: '#ef4444',
+  },
+  {
+    id: 'taekwondo',
+    name: 'Taekwondo MZ',
+    kind: t('Client project · Sports management · In demo', 'Projecto para cliente · Gestão desportiva · Em demonstração'),
+    tagline: t('Athletes, referees, clubs and the national team of the Mozambican Taekwondo Federation, across the 11 provinces', 'Atletas, árbitros, clubes e Selecção Nacional da Federação Moçambicana de Taekwondo, nas 11 províncias'),
+    problem: t(
+      'A federation with 11 provincial associations needs a single register of athletes, referees and clubs, and a quick way to check whether a licence is valid.',
+      'Uma federação com 11 associações provinciais precisa de um registo único de atletas, árbitros e clubes, e de uma forma rápida de confirmar se uma licença é válida.',
+    ),
+    built: [
+      t('Athlete register with automatic licence number, Kup/Poom/Dan grade, age category worked out from the birth date and guardian for minors; export to Excel', 'Registo de atletas com número de licença automático, graduação Kup/Poom/Dan, escalão calculado pela data de nascimento e encarregado para menores; exportação para Excel'),
+      t('National team call-ups per season, by discipline (Kyorugi, Poomsae, Para), age group and weight class', 'Convocatórias da Selecção Nacional por época, modalidade (Kyorugi, Poomsae, Para), escalão e categoria de peso'),
+      t('Printable athlete card with a QR code that opens a public licence check, without personal data', 'Cartão do atleta para imprimir, com QR code que abre uma verificação pública da licença, sem dados pessoais'),
+      t('Referees by level with licence expiry warnings; the federation sees everything and each provincial association sees only its province; 19 automated tests passing', 'Árbitros por nível, com aviso de licença expirada; a federação vê tudo e cada associação provincial só a sua província; 19 testes automáticos a passar'),
+    ],
+    stack: ['Django', 'PostgreSQL', 'Bootstrap 5', 'Chart.js', 'Docker', 'Caddy'],
+    images: [
+      { src: '/img/projects/taekwondo-dashboard.webp', alt: t('National dashboard with athletes per province', 'Painel nacional com atletas por província') },
+      { src: '/img/projects/taekwondo-national-team.webp', alt: t('National team call-ups for the season', 'Convocatórias da Selecção Nacional da época') },
+      { src: '/img/projects/taekwondo-athletes.webp', alt: t('Athlete list with filters', 'Lista de atletas com filtros') },
+      { src: '/img/projects/taekwondo-card.webp', alt: t('Athlete card with QR code', 'Cartão do atleta com QR code'), contain: '#f3f4f2' },
+    ],
+    links: [],
+    accent: '#4ade80',
+  },
 ]
 
 export const services = [
@@ -227,7 +277,7 @@ export const about = t(
 )
 
 export const experience = [
-  { role: t('Freelance Full-Stack Developer', 'Desenvolvedor Full-Stack Freelancer'), org: 'Independent', period: t('2023 — present', '2023 — presente'), text: t('E-commerce, mobility, point-of-sale and access-control systems for clients and own products (Motice, Boleia+, Ngungunhane, SaveGuard).', 'Sistemas de e-commerce, mobilidade, ponto de venda e controlo de acesso para clientes e produtos próprios (Motice, Boleia+, Ngungunhane, SaveGuard).'), logo: '' },
+  { role: t('Freelance Full-Stack Developer', 'Desenvolvedor Full-Stack Freelancer'), org: 'Independent', period: t('2023 — present', '2023 — presente'), text: t('E-commerce, marketplace, mobility, point-of-sale, sports management and access-control systems for clients and own products (Motice, Bazar do Povo, Boleia+, Ngungunhane, Taekwondo MZ, SaveGuard).', 'Sistemas de e-commerce, marketplace, mobilidade, ponto de venda, gestão desportiva e controlo de acesso para clientes e produtos próprios (Motice, Bazar do Povo, Boleia+, Ngungunhane, Taekwondo MZ, SaveGuard).'), logo: '' },
   { role: t('Technical-Professional Intern', 'Estagiário Técnico-Profissional'), org: 'INAGE — Instituto Nacional de Governo Electrónico (Gaza)', period: t('2025', '2025'), text: t('Substitute trainer for the Basic Computing course and IT technical support.', 'Formador substituto do curso de Informática Básica e suporte técnico informático.'), logo: '/img/logos/inage.webp' },
   { role: t('Technical-Professional Intern', 'Estagiário Técnico-Profissional'), org: 'Conselho Municipal da Cidade de Xai-Xai', period: t('2024 — 2025', '2024 — 2025'), text: t('IT technical support for municipal services: hardware, software, networks and users.', 'Suporte técnico informático aos serviços municipais: equipamento, software, redes e utilizadores.'), logo: '/img/logos/cmcxx.webp' },
   { role: t('Technical-Professional Intern — Systems Development', 'Estagiário Técnico-Profissional — Desenvolvimento de Sistemas'), org: 'Universidade Save', period: t('2023', '2023'), text: t('Installed and configured the university e-mail server (Zimbra).', 'Instalação e configuração do servidor de e-mail da universidade (Zimbra).'), logo: '/img/logos/unisave.webp' },
