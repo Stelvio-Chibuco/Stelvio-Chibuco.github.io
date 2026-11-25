@@ -217,7 +217,7 @@ export const projects: Project[] = [
   {
     id: 'taekwondo',
     name: 'Taekwondo MZ',
-    kind: t('Client project · Sports management · In demo', 'Projecto para cliente · Gestão desportiva · Em demonstração'),
+    kind: t('Proposal for the federation · Sports management', 'Proposta para a federação · Gestão desportiva'),
     tagline: t('Athletes, referees, clubs and the national team of the Mozambican Taekwondo Federation, across the 11 provinces', 'Atletas, árbitros, clubes e Selecção Nacional da Federação Moçambicana de Taekwondo, nas 11 províncias'),
     problem: t(
       'A federation with 11 provincial associations needs a single register of athletes, referees and clubs, and a quick way to check whether a licence is valid.',
@@ -277,7 +277,7 @@ export const about = t(
 )
 
 export const experience = [
-  { role: t('Freelance Full-Stack Developer', 'Desenvolvedor Full-Stack Freelancer'), org: 'Independent', period: t('2023 — present', '2023 — presente'), text: t('E-commerce, marketplace, mobility, point-of-sale, sports management and access-control systems for clients and own products (Motice, Bazar do Povo, Boleia+, Ngungunhane, Taekwondo MZ, SaveGuard).', 'Sistemas de e-commerce, marketplace, mobilidade, ponto de venda, gestão desportiva e controlo de acesso para clientes e produtos próprios (Motice, Bazar do Povo, Boleia+, Ngungunhane, Taekwondo MZ, SaveGuard).'), logo: '' },
+  { role: t('Freelance Full-Stack Developer', 'Desenvolvedor Full-Stack Freelancer'), org: 'Independent', period: t('2023 — present', '2023 — presente'), text: t('E-commerce, marketplace, mobility, point-of-sale, sports management and access-control systems for clients, proposals and own products (Motice, Bazar do Povo, Boleia+, Ngungunhane, Taekwondo MZ, SaveGuard).', 'Sistemas de e-commerce, marketplace, mobilidade, ponto de venda, gestão desportiva e controlo de acesso para clientes, propostas e produtos próprios (Motice, Bazar do Povo, Boleia+, Ngungunhane, Taekwondo MZ, SaveGuard).'), logo: '' },
   { role: t('Technical-Professional Intern', 'Estagiário Técnico-Profissional'), org: 'INAGE — Instituto Nacional de Governo Electrónico (Gaza)', period: t('2025', '2025'), text: t('Substitute trainer for the Basic Computing course and IT technical support.', 'Formador substituto do curso de Informática Básica e suporte técnico informático.'), logo: '/img/logos/inage.webp' },
   { role: t('Technical-Professional Intern', 'Estagiário Técnico-Profissional'), org: 'Conselho Municipal da Cidade de Xai-Xai', period: t('2024 — 2025', '2024 — 2025'), text: t('IT technical support for municipal services: hardware, software, networks and users.', 'Suporte técnico informático aos serviços municipais: equipamento, software, redes e utilizadores.'), logo: '/img/logos/cmcxx.webp' },
   { role: t('Technical-Professional Intern — Systems Development', 'Estagiário Técnico-Profissional — Desenvolvimento de Sistemas'), org: 'Universidade Save', period: t('2023', '2023'), text: t('Installed and configured the university e-mail server (Zimbra).', 'Instalação e configuração do servidor de e-mail da universidade (Zimbra).'), logo: '/img/logos/unisave.webp' },
