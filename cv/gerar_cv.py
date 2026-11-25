@@ -312,7 +312,7 @@ PT = {
         },
         {
             "title": "Taekwondo MZ — Gestão da Federação Moçambicana de Taekwondo",
-            "kind": "Em demonstração",
+            "kind": "Proposta",
             "stack": "Django · PostgreSQL · Bootstrap 5 · Docker",
             "bullets": [
                 "Atletas, árbitros, clubes e Selecção Nacional das 11 províncias, com cartão do atleta e "
@@ -484,7 +484,7 @@ EN = {
         },
         {
             "title": "Taekwondo MZ — Mozambican Taekwondo Federation management",
-            "kind": "In demo",
+            "kind": "Proposal",
             "stack": "Django · PostgreSQL · Bootstrap 5 · Docker",
             "bullets": [
                 "Athletes, referees, clubs and national team across the 11 provinces, with athlete cards "
